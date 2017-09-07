@@ -48,7 +48,7 @@
                     <ul class="nav-inner">
                         <li><a href="proportion_set.html" title="设置比例">设置比例</a></li>
                         <li><a href="wage_set.html" title="结算工资">结算工资</a></li>
-                        <li><a href="" title="结算设置">结算设置</a></li>
+                        <li><a href="settlement.html" title="结算设置">结算设置</a></li>
                     </ul>
                 </li>
             </ul>
@@ -74,7 +74,12 @@
                             <tbody class="manage-tbody" id="addDiv">
                                 <tr>
                                     <td class="add-name-l">
-                                        <input type="text" class="add-live-plat"/>
+                                        <select name="" id="" class="add-live-plat">
+                                            <option value="陌陌">陌陌</option>
+                                            <option value="花椒">花椒</option>
+                                            <option value="一直播">一直播</option>
+                                            <option value="快手">快手</option>
+                                        </select>
                                     </td>
                                     <td><input type="text" class="add-id-l"/></td>
                                     <td>
@@ -100,7 +105,7 @@
         $(document).ready(function(){
             // 新增一栏
             $(".add-manage-group").click(function() {
-                $(".manage-tbody").append('<tr>'+'<td class="add-name-l">'+'<input type="text" class="add-live-plat"/>'+'</td>'+'<td>'+'<input type="text" class="add-id-l"/>'+'</td>'+'<td>'+'<input type="text" class="add-live-manage"/>'+'</td>'+'<td>'+'<span class="live-com-l">'+'取消'+'</span>'+'</td>'+'</tr>');
+                $(".manage-tbody").append('<tr>'+'<td class="add-name-l">'+'<select name="" id="" class="add-live-plat">'+'<option value="陌陌">陌陌</option>'+'<option value="花椒">花椒</option>'+'<option value="一直播">一直播</option>'+'</select>'+'</td>'+'<td>'+'<input type="text" class="add-id-l"/>'+'</td>'+'<td>'+'<input type="text" class="add-live-manage"/>'+'</td>'+'<td>'+'<span class="live-com-l">'+'取消'+'</span>'+'</td>'+'</tr>');
             })
             // 取消
             document.getElementById("addDiv").addEventListener("click",function(e) {

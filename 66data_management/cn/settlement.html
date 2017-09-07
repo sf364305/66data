@@ -40,7 +40,7 @@
                     <ul class="nav-inner">
                         <li><a href="bacsic.html" title="基本设置">基本设置</a></li>
                         <li><a href="management.html" title="分组管理">分组管理</a></li>
-                        <li><a href="add_live.html" title="按主播">按主播</a></li>
+                        <li><a href="add_live.html" title="添加主播">添加主播</a></li>
                     </ul>
                 </li>
                 <li>
@@ -79,54 +79,54 @@
                     <span class="add-pro" style="background: none;">平台礼物换算比例</span>
                     <em class="settle-tit">（例如设置1：10，则收到1W的礼物等于1000RMB）</em>
                 </div>
-                <div class="settle-tab">
-                    <table class="manage-table">
-                        <thead>
-                            <tr>
-                                <th style="width: 100px;">平台</th>
-                                <th style="width: 100px;"></th>
-                                <th style="width: 200px;text-align: center;">礼物换算比例</th>
-                                <th style="width: 100px;"></th>
-                            </tr>
-                        </thead>
-                        <tbody class="manage-tbody" id="myDiv">
-                            <tr>
-                                <td class="plat-name">
-                                    陌陌
-                                </td>
-                                <td class="settle-num">1：</td>
-                                <td class="settle-number">10</td>
-                                <td>
-                                    <span class="manage-del">删除</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="plat-name">
-                                    花椒
-                                </td>
-                                <td class="settle-num">1：</td>
-                                <td class="settle-number">10</td>
-                                <td>
-                                    <span class="manage-del">删除</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="add-manage-cont clearfix">
-                    <select name="" class="settle-sel"> 
-                        <option value="陌陌">陌陌</option> 
-                        <option value="花椒">花椒</option>
-                        <option value="一直播">一直播</option> 
-                    </select>
-                    <em style="margin-right:110px;">1：</em>
-                    <input type="text" class="settle-in" placeholder="10" value="10" name=""/>
-                    <span class="add-cont-save">保存</span>
-                    <span class="add-cont-cancle">取消</span>
-                </div> 
-                <div class="add-settle">
-                    <div class="add-manage-group">+新增比例</div>
-                </div>
+                <form action="" method="" name="">        
+                    <div class="settle-tab">
+                        <table class="manage-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 100px;">平台</th>
+                                    <th style="width: 10px;"></th>
+                                    <th style="width: 70px;text-align: left;">礼物换算比例</th>
+                                    <th style="width: 150px;"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="manage-tbody" id="settl">
+                                <tr>
+                                    <td class="plat-name">
+                                        <select name="" class="settle-sel"> 
+                                            <option value="陌陌">陌陌</option> 
+                                            <option value="花椒">花椒</option>
+                                            <option value="一直播">一直播</option> 
+                                        </select>
+                                    </td>
+                                    <td class="settle-num">1：</td>
+                                    <td class="settle-number"><input type="text" class="settle-in" placeholder="10" value="10" name=""/></td>
+                                    <td style="text-align:center;">
+                                        <span class="manage-del">删除</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="plat-name">
+                                        <select name="" class="settle-sel"> 
+                                            <option value="陌陌">陌陌</option> 
+                                            <option value="花椒">花椒</option>
+                                            <option value="一直播">一直播</option> 
+                                        </select>
+                                    </td>
+                                    <td class="settle-num">1：</td>
+                                    <td class="settle-number"><input type="text" class="settle-in" placeholder="10" value="10" name=""/></td>
+                                    <td style="text-align:center;">
+                                        <span class="manage-del">删除</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> 
+                    <div class="add-settle">
+                        <div class="add-manage-group">+新增比例</div>
+                    </div>
+                    <div class="add-live-end"><button type="submit">完成</button></div>
+                </form>
             </div>
         </div>
     </body>
@@ -135,32 +135,24 @@
         $(document).ready(function(){
             // 设置
             $(".settle-set").click(function() {
+                $(".settlement-t").css("display","none");
                 $(".settlement-e").css("display","block");
             })
             $(".settle-cancel").click(function() {
+                $(".settlement-t").css("display","block");
                 $(".settlement-e").css("display","none");
             })
             // 确定设置
             $(".settle-sure").click(function() {
+                $(".settlement-t").css("display","block");
                 $(".settlement-e").css("display","none");
             })
             // 新增分组
             $(".add-manage-group").click(function() {
-                $(".add-manage-cont").css("display","block");
-            })
-            // 取消
-            $(".add-cont-cancle").click(function() {
-                $(".add-manage-cont").css("display","none");
-            })
-            // 保存
-            $(".add-cont-save").click(function() {
-                var inT = $(".settle-sel").val();
-                var inN = $(".settle-in").val();
-                console.log(inT)
-                $(".manage-tbody").append('<tr>'+'<td class="man-name">'+inT+'</td>'+'<td class="settle-num">'+'1：'+'</td>'+'<td class="settle-number">'+inN+'</td>'+'<td>'+'<span class="manage-del">'+'删除'+'</span>'+'</td>'+'</tr>');
+                $(".manage-tbody").append('<tr>'+'<td class="plat-name">'+'<select name="" id="" class="settle-sel">'+'<option value="陌陌">陌陌</option>'+'<option value="花椒">花椒</option>'+'<option value="一直播">一直播</option>'+'</select>'+'</td>'+'<td class="settle-num">'+'1：'+'</td>'+'<td class="settle-number">'+'<input type="text" class="settle-in" placeholder="10" value="10" name=""/>'+'</td>'+'<td style="text-align:center;">'+'<span class="manage-del">'+'删除'+'</span>'+'</td>'+'</tr>');
             })
             // 删除
-            document.getElementById("myDiv").addEventListener("click",function(e) {
+            document.getElementById("settl").addEventListener("click",function(e) {
                 // e.target是被点击的元素
                 if(e.target && e.target.nodeName == "SPAN") {
                     // 获得CSS类名
@@ -168,19 +160,6 @@
                     // 搜索匹配!
                     if(classes == "manage-del") {
                         $(e.target).parent().parent().remove();
-                    }
-                    if(classes == "manage-com") {
-                        if($(e.target).html() == "修改") {                          
-                            $(e.target).html("保存");
-                            var eT = $(e.target).parent().siblings(".man-name").find("em").text();
-                            $(e.target).parent().siblings(".man-name").find("input").val(eT);
-                            $(e.target).parent().siblings(".man-name").find("input").css("display","block").siblings('em').css("display","none");
-                        } else {
-                            $(e.target).html("修改");
-                            var iT = $(e.target).parent().siblings(".man-name").find("input").val();
-                            $(e.target).parent().siblings(".man-name").find("em").html(iT);
-                            $(e.target).parent().siblings(".man-name").find("input").css("display","none").siblings('em').css("display","block");
-                        }
                     }
                 }
             });

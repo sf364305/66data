@@ -186,12 +186,13 @@
     margin: 20px 0 0 40px;
 }
 .content-head {
+    padding-bottom: 15px;
     border-bottom: 1px solid #a0a0a0;
 }
 .content-head strong {
     display: inline-block;
-    height: 45px;
-    line-height: 45px;
+    height: 30px;
+    line-height: 30px;
     font-weight: bold;
     font-size: 18px;
 }
@@ -200,10 +201,10 @@
 }
 .con-head-right a {
     display: inline-block;
-    height: 50px;
+    height: 30px;
     padding: 0 10px;
     color: #222;
-    line-height: 50px;
+    line-height: 30px;
 }
 .index-ranking {
     padding-top: 10px;
@@ -993,7 +994,6 @@
 }
 .wage-mon em {
     margin: 0 10px;
-    color: red;
     font-weight: bold;
 }
 /*比例设置样式*/
@@ -1009,13 +1009,14 @@
 }
 .proportion-table .pro-edit, .proportion-table .pro-del {
     display: inline-block;
-    width: 50px;
-    height: 18px;
+    width: 54px;
+    height: 24px;
     padding: 0;
     border: none;
     margin-left: 15px;
     border-radius: 3px;
-    line-height: 18px;
+    color: #666;
+    line-height: 24px;
     text-align: center;
     cursor: pointer;
     font-size: 12px;
@@ -1025,7 +1026,7 @@
     background: #1cb1cf;
 }
 .proportion-table .pro-del {
-    background: #a0a0a0;
+    background: #e5e5e5;
 }
 .pro-head {
     width: 100%;
@@ -1066,7 +1067,7 @@
     padding-bottom: 50px;
 }
 .alert-for-l select, .alert-for-r input {
-    width: 40%;
+    width: 80px;
     height: 20px;
     padding-left: 10px;
     font-size: 12px;
@@ -1193,7 +1194,7 @@
     font-weight: bold;
 }
 .plat-name select, .settle-in, .add-manage-cont select {
-    width:80px;
+    width: 100px;
     height: 26px;
     border: 1px solid #a0a0a0;
     border-radius: 3px;
@@ -1201,13 +1202,10 @@
     line-height: 26px;
 }
 .add-settle {
-    margin-top: 40px;
+    margin-top: 25px;
 }
 .settle-num, .settle-number {
-    text-align: center;
-}
-.settle-sel {
-    margin-right: 84px;
+    text-align: left;
 }
 .live-settle .settle-tit {
     margin-top: 15px;

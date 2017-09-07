@@ -2,7 +2,7 @@
 * @Author: anchen
 * @Date:   2017-05-02 11:42:50
 * @Last Modified by:   anchen
-* @Last Modified time: 2017-09-06 15:10:36
+* @Last Modified time: 2017-09-07 12:04:04
 */
 
 $(document).ready(function(){
@@ -56,12 +56,4 @@ $(document).ready(function(){
             })
         }
     })
-    $(".btn").click(function(event) {
-        $(this).css({
-            "color": "#1cb1cf",
-            "border": "none",
-            "outline": "none",
-            "background": "none"
-        })
-    });
 });

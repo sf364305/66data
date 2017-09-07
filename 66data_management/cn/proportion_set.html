@@ -148,11 +148,8 @@
             </div>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog" role="document" style="width:400px">
             <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </div>
               <form action="" method="" name="" class="alert-form clearfix">
                   <div class="alert-for-l">
                         <span>签约类型</span>
@@ -167,9 +164,9 @@
                         <input type="text" placeholder="" value="0.4"/>
                   </div>
               </form>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" style="padding: 4px 12px;font-size: 12px;">取消</button>
-                <button type="button" class="btn btn-primary" style="padding: 4px 12px;font-size: 12px;">确定</button>
+              <div class="modal-footer" style="text-align:center">
+                <button type="button" class="btn btn-primary but-set" style="width:90px;height:30px; padding:0;margin-right:55px;color:#fff;border:none;line-height:30px;background:#00b0ec;font-size: 12px;">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" style="width:90px;height:30px; padding:0;color:#989898;border:none;line-height:30px;background:#e5e5e5;font-size: 12px;">取消</button>
               </div>
             </div>
           </div>
@@ -223,9 +220,9 @@
                     </div>
                 </form>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" style="padding: 4px 12px;font-size: 12px;">取消</button>
-                <button type="button" class="btn btn-primary" style="padding: 4px 12px;font-size: 12px;">确定</button>
+              <div class="modal-footer" style="text-align:center">
+                <button type="button" class="btn btn-primary but-new" style="width:90px;height:30px; padding:0;margin-right:55px;color:#fff;border:none;line-height:30px;background:#00b0ec;font-size: 12px;">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" style="width:90px;height:30px; padding:0;color:#989898;border:none;line-height:30px;background:#e5e5e5;font-size: 12px;">取消</button>
               </div>
             </div>
           </div>
@@ -279,9 +276,9 @@
                     </div>
                 </form>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" style="padding: 4px 12px;font-size: 12px;">取消</button>
-                <button type="button" class="btn btn-primary" style="padding: 4px 12px;font-size: 12px;">确定</button>
+              <div class="modal-footer" style="text-align:center">
+                <button type="button" class="btn btn-primary but-edit" style="width:90px;height:30px; padding:0;margin-right:55px;color:#fff;border:none;line-height:30px;background:#00b0ec;font-size: 12px;">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" style="width:90px;height:30px; padding:0;color:#989898;border:none;line-height:30px;background:#e5e5e5;font-size: 12px;">取消</button>
               </div>
             </div>
           </div>
@@ -290,7 +287,20 @@
     <script type="text/javascript" src="../js/style.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
+            // 取消
+            $(".btn-default").click(function() {
+                $(this).css({
+                    "background": "#e5e5e5",
+                    "color": "#989898"
+                })
+            })
             // 新增区间
+            $(".but-new").click(function() {
+                $(this).css({
+                    "background": "#00b0ec",
+                    "color": "#fff"
+                })
+            })
             $(".new-add-new").click(function() {
                 $(".new-all-num").append('<ul class="new-all-con clearfix"><li><input type="text" placeholder="0" /><li>至</li></li><li><input type="text" placeholder="0" /></li><li><input type="text" placeholder="0" /></li><li class="new-del">删除</li></ul>')
             })
@@ -315,6 +325,12 @@
                     "background": "#1cb1cf"
                 })
             })
+            $(".but-edit").click(function() {
+                $(this).css({
+                    "background": "#00b0ec",
+                    "color": "#fff"
+                })
+            })
             // 删除新增
             document.getElementById("proTel").addEventListener("click",function(e) {
                 // e.target是被点击的元素
@@ -332,6 +348,21 @@
                         $(e.target).parent().parent().remove();
                     }                   
                 }
+            });
+            // 设置
+            $(".but-set").click(function() {
+                $(this).css({
+                    "background": "#00b0ec",
+                    "color": "#fff"
+                })
+            })
+            $(".pro-set").click(function(event) {
+                $(this).css({
+                    "color": "#1cb1cf",
+                    "border": "none",
+                    "outline": "none",
+                    "background": "none"
+                })
             });
         });
     </script>
