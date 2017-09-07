@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>设置比例</title>
+        <meta name="keywords" content="主播数据管理中心">
+        <meta name="description" content="主播数据管理中心">
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+        <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="index-header clearfix">
+            <a href="" title="" class="logo"><img src="../images/logo.png" alt="" /></a>
+            <div class="login">退出</div>
+            <div class="person-name">迷恋哥的传说</div>
+            <div class="guild-name">超强公会</div>
+        </header>
+        <div class="index-left">
+            <ul class="nav-left">
+                <li>
+                    <a href="javascript:;" class="nav-for nav-slide" title="业绩报表">业绩报表</a>
+                    <ul class="nav-inner">
+                        <li><a href="../index.html" title="概况">概况</a></li>
+                        <li><a href="live.html" title="按主播">按主播</a></li>
+                        <li><a href="grouping.html" title="按分组">按分组</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-tool nav-slide" title="工具箱">工具箱</a>
+                    <ul class="nav-inner">
+                        <li><a href="gift.html" title="刷礼物纪录">刷礼纪录</a></li>
+                        <li><a href="month.html" title="月度目标">月度目标</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-guild nav-slide" title="公会设置">公会设置</a>
+                    <ul class="nav-inner">
+                        <li><a href="bacsic.html" title="基本设置">基本设置</a></li>
+                        <li><a href="management.html" title="分组管理">分组管理</a></li>
+                        <li><a href="add_live.html" title="按主播">按主播</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-wage nav-slide" title="工资结算">工资结算</a>
+                    <ul class="nav-inner">
+                        <li><a href="" class="nav-show" title="设置比例">设置比例</a></li>
+                        <li><a href="wage_set.html" title="结算工资">结算工资</a></li>
+                        <li><a href="settlement.html" title="结算设置">结算设置</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="manage-wrap">
+            <div class="live-head clearfix">
+                <div class="live-grouping live-ho">
+                    <button type="button" class="btn btn-primary add-pro" data-toggle="modal" data-target="#newexm" data-whatever="@fat">+新增</button>
+                </div>
+            </div>
+            <div class="proportion-t">
+                <table class="proportion-table">
+                    <thead>
+                        <tr>
+                            <th>签约类型</th>
+                            <th>底薪</th>
+                            <th>礼物区间</th>
+                            <th>抽成比例</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="proTel">
+                        <tr>
+                            <td>A级</td>
+                            <td>3000</td>
+                            <td>
+                                <div>0-50000</div>
+                                <div>5-150000</div>
+                                <div>150000-500000</div>
+                            </td>
+                            <td>
+                                <div>30%</div>
+                                <div>50%</div>
+                                <div>60%</div>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary pro-edit" data-toggle="modal" data-target="#newEdit" data-whatever="@fat">修改</button>
+                                <span class="pro-del">删除</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>A级</td>
+                            <td>3000</td>
+                            <td>
+                                <div>0-50000</div>
+                                <div>50000-150000</div>
+                                <div>150000-500000</div>
+                            </td>
+                            <td>
+                                <div>30%</div>
+                                <div>50%</div>
+                                <div>60%</div>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary pro-edit" data-toggle="modal" data-target="#newEdit" data-whatever="@fat">修改</button>
+                                <span class="pro-del">删除</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pro-head clearfix">
+                <div class="live-grouping live-ho">
+                    <span class="add-pro" style="background: none;">所有主播</span>
+                </div>
+                <table class="proportion-table2">
+                    <thead>
+                        <tr>
+                            <th>主播</th>
+                            <th>平台</th>
+                            <th>签约类型</th>
+                            <th>平台比例</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>酸酸甜甜是我</td>
+                            <td>陌陌</td>
+                            <td>A级</td>
+                            <td>0.5</td>
+                            <td>
+                                <button type="button" class="btn btn-primary pro-set" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">设置</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>酸酸甜甜是我</td>
+                            <td>陌陌</td>
+                            <td>A级</td>
+                            <td>0.5</td>
+                            <td>
+                                <button type="button" class="btn btn-primary pro-set" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">设置</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <form action="" method="" name="" class="alert-form clearfix">
+                  <div class="alert-for-l">
+                        <span>签约类型</span>
+                        <select name=""> 
+                            <option value="0">A级</option> 
+                            <option value="1">B级</option>
+                            <option value="0">C级</option> 
+                        </select>
+                  </div>
+                  <div class="alert-for-r">
+                        <span>平台比例</span>
+                        <input type="text" placeholder="" value="0.4"/>
+                  </div>
+              </form>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" style="padding: 4px 12px;font-size: 12px;">取消</button>
+                <button type="button" class="btn btn-primary" style="padding: 4px 12px;font-size: 12px;">确定</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="newexm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <form action="" method="" name="" class="new-form">
+                    <div class="new-alet-n">
+                        <span>名称</span>
+                        <input type="text" placeholder="签约类型" />
+                    </div>
+                    <div class="new-wage">
+                        <span>底薪</span>
+                        <input type="text" placeholder="请输入金额" />
+                        <em>元</em>
+                    </div>
+                    <ul class="new-all clearfix">
+                        <li style="width:30%;">礼物区间起始(包含当前值)</li>
+                        <li style="width:10%;">至</li>
+                        <li style="width:30%;">礼物区间结束(不包含当前值)</li>
+                        <li style="width:20%;text-align:center;">比例</li>
+                        <li style="width:10%;text-align:center;">操作</li>
+                    </ul>
+                    <div class="new-all-num" id="newDel">                       
+                        <ul class="new-all-con clearfix">
+                            <li><input type="text" placeholder="0" /></li>
+                            <li>至</li>
+                            <li><input type="text" placeholder="0" /></li>
+                            <li><input type="text" placeholder="0" /></li>
+                            <li class="new-del">删除</li>
+                        </ul>
+                        <ul class="new-all-con clearfix">
+                            <li><input type="text" placeholder="0" /></li>
+                            <li>至</li>
+                            <li><input type="text" placeholder="0" /></li>
+                            <li><input type="text" placeholder="0" /></li>
+                            <li class="new-del">删除</li>
+                        </ul>
+                        <ul class="new-all-con clearfix">
+                            <li><input type="text" placeholder="0" /></li>
+                            <li>至</li>
+                            <li><input type="text" placeholder="0" /></li>
+                            <li><input type="text" placeholder="0" /></li>
+                            <li class="new-del">删除</li>
+                        </ul>
+                    </div>
+                    <div class="new-add-new">
+                        +新增区间
+                    </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" style="padding: 4px 12px;font-size: 12px;">取消</button>
+                <button type="button" class="btn btn-primary" style="padding: 4px 12px;font-size: 12px;">确定</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="newEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <form action="" method="" name="" class="new-form">
+                    <div class="new-alet-n">
+                        <span>名称</span>
+                        <input type="text" placeholder="签约类型" value="A级"/>
+                    </div>
+                    <div class="new-wage">
+                        <span>底薪</span>
+                        <input type="text" placeholder="请输入金额" value="3000"/>
+                        <em>元</em>
+                    </div>
+                    <ul class="new-all clearfix">
+                        <li style="width:30%;">礼物区间起始(包含当前值)</li>
+                        <li style="width:10%;">至</li>
+                        <li style="width:30%;">礼物区间结束(不包含当前值)</li>
+                        <li style="width:20%;text-align:center;">比例</li>
+                        <li style="width:10%;text-align:center;">操作</li>
+                    </ul>
+                    <div class="new-all-num" id="newDel">                       
+                        <ul class="new-all-con clearfix">
+                            <li><input type="text" placeholder="0" value="0"/></li>
+                            <li>至</li>
+                            <li><input type="text" placeholder="0" value="50000"/></li>
+                            <li><input type="text" placeholder="0.5" /></li>
+                            <li class="new-del">删除</li>
+                        </ul>
+                        <ul class="new-all-con clearfix">
+                            <li><input type="text" placeholder="0" value="50000"/></li>
+                            <li>至</li>
+                            <li><input type="text" placeholder="0" value="150000"/></li>
+                            <li><input type="text" placeholder="0" value="0.5"/></li>
+                            <li class="new-del">删除</li>
+                        </ul>
+                        <ul class="new-all-con clearfix">
+                            <li><input type="text" placeholder="0" value="150000"/></li>
+                            <li>至</li>
+                            <li><input type="text" placeholder="0" value="500000"/></li>
+                            <li><input type="text" placeholder="0" value="0.5"/></li>
+                            <li class="new-del">删除</li>
+                        </ul>
+                    </div>
+                    <div class="new-add-new">
+                        +新增区间
+                    </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" style="padding: 4px 12px;font-size: 12px;">取消</button>
+                <button type="button" class="btn btn-primary" style="padding: 4px 12px;font-size: 12px;">确定</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="../js/style.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // 新增区间
+            $(".new-add-new").click(function() {
+                $(".new-all-num").append('<ul class="new-all-con clearfix"><li><input type="text" placeholder="0" /><li>至</li></li><li><input type="text" placeholder="0" /></li><li><input type="text" placeholder="0" /></li><li class="new-del">删除</li></ul>')
+            })
+            // 删除区间
+            document.getElementById("newDel").addEventListener("click",function(e) {
+                // e.target是被点击的元素
+                if(e.target && e.target.nodeName == "LI") {
+                    // 获得CSS类名
+                    var classes = e.target.className;
+                    // 搜索匹配!
+                    if(classes == "new-del") {
+                        $(e.target).parent().remove();
+                    }                   
+                }
+            });
+            // 修改区间
+            $(".pro-edit").click(function() {
+                $(this).css({
+                    "color": "#fff",
+                    "border": "none",
+                    "outline": "none",
+                    "background": "#1cb1cf"
+                })
+            })
+            // 删除新增
+            document.getElementById("proTel").addEventListener("click",function(e) {
+                // e.target是被点击的元素
+                if(e.target && e.target.nodeName == "SPAN") {
+                    // 获得CSS类名
+                    var classes = e.target.className;
+                    // 搜索匹配!
+                    if(classes == "pro-del") {
+                        $(e.target).css({
+                            "color": "#000",
+                            "border": "none",
+                            "outline": "none",
+                            "background": "#a0a0a0"
+                        })
+                        $(e.target).parent().parent().remove();
+                    }                   
+                }
+            });
+        });
+    </script>
+</html>

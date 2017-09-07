@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>主播详情</title>
+        <meta name="keywords" content="主播数据管理中心">
+        <meta name="description" content="主播数据管理中心">
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css" />
+        <!-- <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script> -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="index-header clearfix">
+            <a href="" title="" class="logo"><img src="../images/logo.png" alt="" /></a>
+            <div class="login">退出</div>
+            <div class="person-name">迷恋哥的传说</div>
+            <div class="guild-name">超强公会</div>
+        </header>
+        <div class="index-left">
+            <ul class="nav-left">
+                <li>
+                    <a href="javascript:;" class="nav-for nav-slide" title="业绩报表">业绩报表</a>
+                    <ul class="nav-inner">
+                        <li><a href="../index.html" title="概况">概况</a></li>
+                        <li><a href="" title="按主播" class="nav-show">按主播</a></li>
+                        <li><a href="grouping.html" title="按分组">按分组</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-tool nav-slide" title="工具箱">工具箱</a>
+                    <ul class="nav-inner">
+                        <li><a href="gift.html" title="刷礼物纪录">刷礼纪录</a></li>
+                        <li><a href="month.html" title="月度目标">月度目标</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-guild nav-slide" title="公会设置">公会设置</a>
+                    <ul class="nav-inner">
+                        <li><a href="bacsic.html" title="基本设置">基本设置</a></li>
+                        <li><a href="management.html" title="分组管理">分组管理</a></li>
+                        <li><a href="add_live.html" title="按主播">按主播</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-wage nav-slide" title="工资结算">工资结算</a>
+                    <ul class="nav-inner">
+                        <li><a href="proportion_set.html" title="设置比例">设置比例</a></li>
+                        <li><a href="wage_set.html" title="结算工资">结算工资</a></li>
+                        <li><a href="settlement.html" title="结算设置">结算设置</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="detail-wrap">
+            <div class="live-head live-detail-h clearfix">
+                <div class="live-grouping live-ho">
+                    <a herf="" title="数据" class="live-de">数据</a>
+                </div>
+                <div class="live-plat live-ho">
+                    <a herf="" title="跟进记录" class="live-de">跟进记录</a>
+                </div>
+                <div class="live-address live-ho">
+                    <a herf="gift.html" title="刷礼记录" class="live-de">刷礼记录</a>
+                </div>
+                <div class="live-sex  live-ho">
+                    <a herf="" title="个人记录" class="live-de">个人记录</a>
+                </div>
+                <div class="line-live" style="margin-right: 20px;"></div>
+                <div class="live-d live-ho">
+                    <a herf="" title="删除" class="live-de">删除</a>
+                </div>
+                <div class="living-d clearfix">
+                    <a herf="" title="分享" class="live-de">分享</a>
+                </div>
+                <div class="living-d clearfix">
+                    <a herf="" title="标星" class="live-de">标星</a>
+                </div>
+                <div class="line-live"></div>
+                <div class="live-now-d">
+                    <em>最后更新时间：</em>
+                    <em class="live-n">2017/09/5</em>
+                </div>
+            </div>
+            <div class="live-d-con">
+                <div class="detail-con-h clearfix">
+                    <div class="detail-person clearfix">
+                        <dl>
+                            <dt><img src="../images/first_1.png" alt="" /></dt>
+                            <dd>
+                                <p class="detail-name">萌小美</p>
+                                <div class="detail-id">
+                                    <img src="../images/yizhibo.png" alt="" />
+                                    <span>ID:521651632</span>
+                                </div>
+                            </dd>
+                        </dl>
+                        <div class="detail-line"></div>
+                        <div class="detail-person-r">
+                            <div>
+                                <p>231.2万</p>
+                                <span>粉丝</span>
+                            </div>
+                            <div>
+                                <p>2.6亿</p>
+                                <span>礼物数</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-p-list" style="width:16%">
+                        <div>
+                            <p>25天</p>
+                            <span>本月活跃天</span>
+                        </div>
+                        <div>
+                            <p>100小时</p>
+                            <span>本月时长</span>
+                        </div>
+                    </div>
+                    <div class="detail-line2"></div>
+                    <div class="detail-p-list">
+                        <div>
+                            <p>666666人</p>
+                            <span>平均观众/小时</span>
+                        </div>
+                        <div>
+                            <p>66666元</p>
+                            <span>平均打赏/小时</span>
+                        </div>
+                    </div>
+                    <div class="detail-line2"></div>
+                    <div class="detail-p-list">
+                        <div>
+                            <p>666666人</p>
+                            <span>粉丝增速(周)</span>
+                        </div>
+                        <div>
+                            <p>66666元</p>
+                            <span>收入增速(周)</span>
+                        </div>
+                    </div>
+                    <div class="detail-line2"></div>
+                    <div class="detail-p-last">
+                        <div>
+                            <p>666666元</p>
+                            <span>内部刷礼(总)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-chart">
+                    <div class="chart-h clearfix">
+                        <div class="chart-le">成长曲线</div>
+                        <div class="chart-date-s">
+                            <input type="text" placeholder="起始时间" id="date_1" readonly/>
+                        </div>
+                        <!-- <div class="chart-date-e">
+                            <input type="text" placeholder="结束时间" id="date_1" readonly/>
+                        </div> -->
+                        <div class="chart-add">
+                            <span class="chart-choice">增量</span>
+                            <span>累积</span>
+                        </div>
+                        <div class="chart-time-s">
+                            <span class="chart-choice">按天</span>
+                            <span>按周</span>
+                            <span>按月</span>
+                        </div>
+                        <div class="chart-date-d">
+                            <span class="chart-choice">收入</span>
+                            <span>观众</span>
+                            <span>粉丝</span>
+                            <span>时长</span>
+                        </div>
+                    </div>
+                    <div id="container" class="detail-chart"></div>
+                </div>
+                <div class="detail-tb">
+                    <div class="detail-num">
+                        开场记录（<em>4</em>）场
+                    </div>
+                    <table class="detail-table">
+                        <thead>
+                            <tr>
+                                <th>时间</th>
+                                <th>时长</th>
+                                <th>主题</th>
+                                <th>礼物数</th>
+                                <th>礼物数折现</th>
+                                <th>观众</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2018-8-1</td>
+                                <td>03:20:45</td>
+                                <td>情人节</td>
+                                <td>66666</td>
+                                <td>666</td>
+                                <td>666666</td>
+                            </tr>
+                            <tr>
+                                <td>2018-8-1</td>
+                                <td>03:20:45</td>
+                                <td>情人节</td>
+                                <td>66666</td>
+                                <td>666</td>
+                                <td>666666</td>
+                            </tr>
+                            <tr>
+                                <td>2018-8-1</td>
+                                <td>03:20:45</td>
+                                <td>情人节</td>
+                                <td>66666</td>
+                                <td>666</td>
+                                <td>666666</td>
+                            </tr>
+                            <tr>
+                                <td>2018-8-1</td>
+                                <td>03:20:45</td>
+                                <td>情人节</td>
+                                <td>66666</td>
+                                <td>666</td>
+                                <td>666666</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="follow-d">
+                    <div class="detail-num">
+                        跟进记录
+                    </div>
+                    <div class="follow-con">
+                        <ul class="follow-list" id="followL">
+                            <li>
+                                <div class="follow-h clearfix">
+                                    <div class="follow-h-l">2017-9-5/周五/17:50/by:黄涛</div>
+                                    <div class="follow-ed">
+                                        <span class="follow-edit">编缉</span>
+                                        <span class="follow-del">删除</span>
+                                    </div>
+                                </div>
+                                <p class="follow-content">啦啦啦啦啦啦，我是个超级大笨蛋。</p>
+                            </li>
+                            <li>
+                                <div class="follow-h clearfix">
+                                    <div class="follow-h-l">2017-9-5/周五/17:50/by:黄涛</div>
+                                    <div class="follow-ed">
+                                        <span class="follow-edit">编缉</span>
+                                        <span class="follow-del">删除</span>
+                                    </div>
+                                </div>
+                                <p class="follow-content">啦啦啦啦啦啦，我是个超级大笨蛋。</p>
+                            </li>
+                            <li>
+                                <div class="follow-h clearfix">
+                                    <div class="follow-h-l">2017-9-5/周五/17:50/by:黄涛</div>
+                                    <div class="follow-ed">
+                                        <span class="follow-edit">编缉</span>
+                                        <span class="follow-del">删除</span>
+                                    </div>
+                                </div>
+                                <p class="follow-content">啦啦啦啦啦啦，我是个超级大笨蛋。</p>
+                            </li>
+                        </ul>
+                        <div class="follow-add">
+                            +新增记录
+                        </div>
+                        <div class="follow-add-con">
+                            <textarea name="" id="newDetail" rows="3"></textarea>
+                            <div class="follow-add-s">
+                                <span class="follow-add-save">保存</span>
+                                <span class="follow-add-cancle">取消</span>
+                            </div>
+                        </div>
+                        <div class="follow-e-con">
+                            <textarea name="" id="newDetail2" rows="3"></textarea>
+                            <div class="follow-add-s">
+                                <span class="follow-e-save">保存</span>
+                                <span class="follow-e-cancle">取消</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-gift">
+                    <div class="detail-num">
+                        刷礼记录（<em>4</em>）场
+                    </div>
+                    <div class="detail-gift-con">
+                        <div class="add-gift detail-add-gift">+新增刷礼物记录</div>
+                        <div class="add-gift-con clearfix">
+                            <div class="add-date" style="width:150px;">
+                                <input type="text" value="2017-08-28"/>
+                            </div>
+                            <div class="add-account" style="width:150px;">
+                                <input type="text" value="" placeholder="输入送礼物号"/>
+                            </div>
+                            <div class="add-virtual" style="width:150px;">
+                                <input type="text" value="" placeholder="支出虚拟币"/>
+                            </div>
+                            <div class="add-file">
+                                <i>上传截图</i>
+                                <input type="file" value="" class="add-upload"/>
+                            </div>
+                            <div class="add-comdity clearfix" style="margin-left:80px;">
+                                <span class="add-save">保存</span>
+                                <span class="add-cancle" style="margin-left:50px;">取消</span>
+                            </div>
+                        </div>
+                        <div class="gift-t">
+                            <table class="gift-table" style="width:100%;">
+                                <thead>
+                                    <tr>
+                                        <th>时间</th>
+                                        <th>支出账号</th>
+                                        <th>支出虚拟币</th>
+                                        <th>等值人民币</th>
+                                        <th>收礼物主播</th>
+                                        <th>操作人</th>
+                                        <th>截图</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2017-8-21</td>
+                                        <td>逗逗逗</td>
+                                        <td>16541</td>
+                                        <td>5015</td>
+                                        <td>小小美</td>
+                                        <td>黄涛</td>
+                                        <td class="cl-gift"><a href="">点击查看</a></td>
+                                        <td class="del-gift">删除</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2017-8-21</td>
+                                        <td>逗逗逗</td>
+                                        <td>16541</td>
+                                        <td>5015</td>
+                                        <td>小小美</td>
+                                        <td>黄涛</td>
+                                        <td class="cl-gift"><a href="">点击查看</a></td>
+                                        <td class="del-gift">删除</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-information">
+                    <div class="detail-num">
+                        个人资料
+                    </div>
+                    <div class="detail-in-con">
+                        <ul class="detail-in-content">
+                            <li class="clearfix">
+                                <em>真实姓名</em>
+                                <div class="detail-in-r">
+                                    <span>酸酸甜甜就是我</span>
+                                    <input type="text" class="detail-in-n" value="酸酸甜甜就是我"/>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <em>性别</em>
+                                <div class="detail-in-r">
+                                    <span>未知</span>
+                                    <select name="" id="" class="detail-in-n">
+                                        <option value="未知">未知</option>
+                                        <option value="男">男</option>
+                                        <option value="女">女</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <em>城市</em>
+                                <div class="detail-in-r">
+                                    <span>厦门</span>
+                                    <input type="text" class="detail-in-n" value="厦门"/>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <em>手机号</em>
+                                <div class="detail-in-r">
+                                    <span>15260623877</span>
+                                    <input type="text" class="detail-in-n" value="15260623877"/>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <em>签约类型</em>
+                                <div class="detail-in-r">
+                                    <span>线上签</span>
+                                    <select name="" id="" class="detail-in-n">
+                                        <option value="线上签">线上签</option>
+                                        <option value="线下签">线下签</option>
+                                        <option value="不签">不签</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <em>日期</em>
+                                <div class="detail-in-r">
+                                    <span>2017/08/06</span>
+                                    <input type="text" class="detail-in-n" id="date_6" value="2017/08/06" readonly/>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <em>分成比例</em>
+                                <div class="detail-in-r">
+                                    <span>50%</span>
+                                    <input type="text" class="detail-in-n" value="50%"/>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <em>所有分组</em>
+                                <div class="detail-in-r">
+                                    <span>游戏</span>
+                                    <select name="" id="" class="detail-in-n">
+                                        <option value="游戏">游戏</option>
+                                        <option value="音乐">音乐</option>
+                                        <option value="美女">美女</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <em>添加人</em>
+                                <div class="detail-in-r">
+                                    <span>何纪栋</span>
+                                    <input type="text" class="detail-in-n" value="何纪栋"/>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <em>备注</em>
+                                <div class="detail-in-r" style="width:80%;">
+                                    <p>何纪栋是个大笨蛋呀大笨蛋</p>
+                                    <textarea name="" id=""  class="detail-in-n" rows="6" style="width:100%;height: 80px;resize: none;">何纪栋是个大笨蛋呀大笨蛋</textarea>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="detail-in-e">
+                            编缉
+                        </div>
+                        <div class="detail-in-now">
+                            <span class="det-save">保存</span>
+                            <span class="det-cancel">取消</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="../js/style.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui-datepicker.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/data.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+    <script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // 日期调用
+            $("#date_1").datepicker();
+            $("#date_6").datepicker({
+                showWeek: true
+            });
+            // 选择分类
+            $(".live-ho").hover(function() {
+                $(this).children("ul").css({
+                    "display": "block"
+                })
+                var liH = $(this).children("ul").height();
+                $(this).children("ul").css({
+                    "bottom": -liH
+                })
+            }, function() {
+                $(this).children("ul").css({
+                    "display": "none"
+                })
+            });
+            $(".live-dif li").click(function() {
+                var tex = $(this).html();
+                $(this).parent().css("display","none");
+                $(this).parent().siblings("span").html(tex);
+            })
+            // 新增编缉信息
+            $(".follow-add").click(function() {
+                $(".follow-add-con").css("display", "block");
+            })
+            // 编缉删除
+            document.getElementById("followL").addEventListener("click",function(e) {
+                // e.target是被点击的元素
+                if(e.target && e.target.nodeName == "SPAN") {
+                    // 获得CSS类名
+                    var classes = e.target.className;
+                    // 搜索匹配!
+                    if(classes == "follow-edit") {
+                        var tex = $(e.target).parent().parent().siblings("p").text();
+                        var num = $(e.target).parent().parent().parent().index();
+                        $("#followL").attr("data",num);
+                        $("#newDetail2").val(tex);
+                        console.log(num+",")
+                        $(".follow-e-con").css("display", "block");
+                        $(".follow-e-save").click(function() {
+                            var tel = $("#newDetail2").val();
+                            var tNum = $("#followL").attr("data");
+                            console.log(tNum);
+                            $(".follow-list li").eq(tNum).find("p").text(tel);
+                            $(".follow-e-con").css("display", "none");
+                        })
+                    }
+                    if(classes == "follow-del") {
+                        $(e.target).parent().parent().parent().remove();
+                    }
+
+                }
+            });
+            // 保存
+            $(".follow-add-save").click(function() {
+                $(".follow-add-con").css("display", "none");
+                var teL = $("#newDetail").val();
+                $(".follow-list").append('<li>'+'<div class="follow-h clearfix">'+'<div class="follow-h-l">2017-9-5/周五/17:50/by:黄涛</div>'+'<div class="follow-ed">'+'<span class="follow-edit">'+'编缉'+'</span>'+'<span class="follow-del">'+'删除'+'</span>'+'</div>'+'</div>'+'<p class="follow-content">'+teL+'</p>'+'</li>')
+            })
+            // 取消
+            $(".follow-add-cancle").click(function() {
+                $(".follow-add-con").css("display", "none");
+            })
+            $(".follow-e-cancle").click(function() {
+                $(".follow-e-con").css("display", "none");
+            })
+            // 新增刷礼物记录
+            $(".add-gift").click(function() {
+                $(".add-gift-con").css("display", "block");
+            })
+            // 保存
+            $(".add-save").click(function() {
+                $(".add-gift-con").css("display", "none");
+            })
+            // 取消
+            $(".add-cancle").click(function() {
+                $(".add-gift-con").css("display", "none");
+            })
+            // 个人资料编缉
+            $(".detail-in-e").click(function() {
+                $(this).css("display","none");
+                $(".detail-in-n").css("display","block").siblings().css("display","none")
+                $(".detail-in-now").css("display","block");
+            })
+            // 个人资料保存
+            $(".det-save").click(function() {
+                $(".detail-in-e").css("display","block");
+                $(".detail-in-n").css("display","none").siblings().css("display","block");
+                $(this).parent().css("display","none");
+            })
+            // 个人资料取消
+            $(".det-cancel").click(function() {
+                $(".detail-in-e").css("display","block");
+                $(".detail-in-n").css("display","none").siblings().css("display","block");
+                $(this).parent().css("display","none");
+            })
+            // 图表功能
+            var chart = new Highcharts.Chart('container', {
+                title: {
+                    text: '流水/日活线性图',
+                    x: -20
+                },
+                subtitle: {
+                    text: '',
+                    x: -20
+                },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        day: '%Y-%m-%e'
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: '万元'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: '万元'
+                },
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    borderWidth: 0
+                },
+                series: [{
+                    name: '流水',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    pointStart: Date.UTC(2017,6,7),//起始时间
+                    pointInterval: 1*24 * 3600 * 1000 //时间间隔
+                }],
+            }); 
+        })
+    </script>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>主播数据管理中心</title>
+        <meta name="keywords" content="主播数据管理中心">
+        <meta name="description" content="主播数据管理中心">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+        <!-- <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script> -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="index-header clearfix">
+            <a href="" title="" class="logo"><img src="images/logo.png" alt="" /></a>
+            <div class="login">退出</div>
+            <div class="person-name">迷恋哥的传说</div>
+            <div class="guild-name guild-add-n">
+                <span class="guild-name-s">66公会</span>
+                <ul class="add-list add-list-guild">
+                    <li>66公会</li>
+                    <li>美女公会</li>
+                    <li class="add-new-guild"><a href="" title="+新增公会">+新增公会</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="index-left">
+            <ul class="nav-left">
+                <li>
+                    <a href="javascript:;" class="nav-for nav-slide" title="业绩报表">业绩报表</a>
+                    <ul class="nav-inner">
+                        <li><a href="" title="概况" class="nav-show">概况</a></li>
+                        <li><a href="cn/live.html" title="按主播">按主播</a></li>
+                        <li><a href="cn/grouping.html" title="按分组">按分组</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-tool nav-slide" title="工具箱">工具箱</a>
+                    <ul class="nav-inner">
+                        <li><a href="cn/gift.html" title="刷礼物纪录">刷礼纪录</a></li>
+                        <li><a href="cn/month.html" title="月度目标">月度目标</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-guild nav-slide" title="公会设置">公会设置</a>
+                    <ul class="nav-inner">
+                        <li><a href="cn/bacsic.html" title="基本设置">基本设置</a></li>
+                        <li><a href="cn/management.html" title="分组管理">分组管理</a></li>
+                        <li><a href="cn/add_live.html" title="按主播">按主播</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-wage nav-slide" title="工资结算">工资结算</a>
+                    <ul class="nav-inner">
+                        <li><a href="cn/proportion_set.html" title="设置比例">设置比例</a></li>
+                        <li><a href="cn/wage_set.html" title="结算工资">结算工资</a></li>
+                        <li><a href="cn/settlement.html" title="结算设置">结算设置</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="index-wrap">
+            <div class="cation-data">
+                <div class="row">
+                    <div class="col-lg-3 col-md-5 col-sm-5 index-data clearfix">
+                        <div class="index-data-left">
+                            <img src="images/live.png" alt="" />
+                            <span>昨日直播</span>
+                        </div>
+                        <div class="index-data-right">
+                            <div>
+                                <span>人数：</span>
+                                <em>5人</em>
+                            </div>
+                            <div>
+                                <span>对比：</span>
+                                <em>增加1人</em>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-5 index-data clearfix">
+                        <div class="index-data-left">
+                            <img src="images/water.png" alt="" />
+                            <span>昨日流水</span>
+                        </div>
+                        <div class="index-data-right">
+                            <div>
+                                <span>金额：</span>
+                                <em>8.2万元</em>
+                            </div>
+                            <div>
+                                <span>前天：</span>
+                                <em>1万元</em>
+                                <i style="color:red;">（+7.2万元）</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-5 index-data clearfix">
+                        <div class="index-data-left">
+                            <img src="images/new_person.png" alt="" />
+                            <span>本月新人</span>
+                        </div>
+                        <div class="index-data-right">
+                            <div>
+                                <span>人数：</span>
+                                <em>6人</em>
+                            </div>
+                            <div>
+                                <span>环比：</span>
+                                <em>10人</em>
+                                <i style="color:#2b94c8;">（-4人）</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-5 index-data clearfix">
+                        <div class="index-data-left">
+                            <img src="images/be_live.png" alt="" />
+                            <span>本月开播</span>
+                        </div>
+                        <div class="index-data-right">
+                            <div>
+                                <span>人数：</span>
+                                <em>5人</em>
+                            </div>
+                            <div>
+                                <span>环比：</span>
+                                <em>10人</em>
+                                <i style="color:#2b94c8;">（-4人）</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="index-chart-t clearfix">
+                <div><input type="text" class="index-chart-b" id="date_1" value="" placeholder="起始日期" readonly/></div>
+                <div class="in-chart-all">
+                    <span class="index-chart-d chart-show">按天</span>
+                    <span class="index-chart-w">按周</span>
+                    <span class="index-chart-m">按月</span>
+                </div>
+            </div>
+            <div id="container" class="index-chart"></div>
+            <div class="index-content">
+                <div class="col-lg-6 anchor">
+                    <div class="content-head clearfix">
+                        <strong>主播排行</strong>
+                        <div class="con-head-right clearfix">
+                            <a href="javascript:;" title="昨日" class="yesterday">昨日</a>
+                            <a href="javascript:;" title="本周" class="week">本周</a>
+                            <a href="javascript:;" title="本月" class="month">本月</a>
+                            <span class="con-border"></span>
+                            <a href="javascript:;" title="流水" class="water">流水</a>
+                            <a href="javascript:;" title="时长" class="duration">时长</a>
+                            <a href="javascript:;" title="粉丝" class="fans">粉丝</a>
+                        </div>
+                    </div>
+                    <div class="index-ranking">
+                        <a href="cn/live_detail.html" title="" class="ranking-first clearfix">
+                            <i></i>
+                            <img src="images/first_1.png" alt="" />
+                            <span>我是第一名</span>
+                            <strong>10万</strong>
+                            <em>游戏</em>
+                        </a>
+                        <a href="cn/live_detail.html" title="" class="ranking-second clearfix">
+                            <i></i>
+                            <img src="images/second_2.png" alt="" />
+                            <span>我是第二名</span>
+                            <strong>10万</strong>
+                            <em>音乐</em>
+                        </a>
+                        <a href="cn/live_detail.html" title="" class="ranking-third clearfix">
+                            <i></i>
+                            <img src="images/third_3.png" alt="" />
+                            <span>我是第三名</span>
+                            <strong>10万</strong>
+                            <em>娱乐</em>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 annotated">
+                    <div class="content-head clearfix">
+                        <strong>标注主播</strong>
+                        <div class="con-head-right clearfix">
+                            <a href="javascript:;" title="昨日" class="yesterday">昨日</a>
+                            <a href="javascript:;" title="本周" class="week">本周</a>
+                            <a href="javascript:;" title="本月" class="month">本月</a>
+                            <a href="javascript:;" title="流水" class="water">流水</a>
+                            <a href="javascript:;" title="时长" class="duration">时长</a>
+                            <a href="javascript:;" title="粉丝" class="fans">粉丝</a>
+                        </div>
+                    </div>
+                    <div class="index-ranking">
+                        <a href="" title="" class="ranking-first clearfix">
+                            <i></i>
+                            <img src="images/first_1.png" alt="" />
+                            <span>我是第一名</span>
+                            <strong>10万</strong>
+                            <em>游戏</em>
+                        </a>
+                        <a href="" title="" class="ranking-second clearfix">
+                            <i></i>
+                            <img src="images/second_2.png" alt="" />
+                            <span>我是第二名</span>
+                            <strong>10万</strong>
+                            <em>音乐</em>
+                        </a>
+                        <a href="" title="" class="ranking-third clearfix">
+                            <i></i>
+                            <img src="images/third_3.png" alt="" />
+                            <span>我是第三名</span>
+                            <strong>10万</strong>
+                            <em>娱乐</em>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 grouping">
+                    <div class="content-head clearfix">
+                        <strong>所有分组排行</strong>
+                        <div class="con-head-right clearfix">
+                            <a href="javascript:;" title="昨日" class="yesterday">昨日</a>
+                            <a href="javascript:;" title="本周" class="week">本周</a>
+                            <a href="javascript:;" title="本月" class="month">本月</a>
+                            <a href="javascript:;" title="流水" class="water">流水</a>
+                            <a href="javascript:;" title="时长" class="duration">时长</a>
+                            <a href="javascript:;" title="粉丝" class="fans">粉丝</a>
+                        </div>
+                    </div>
+                    <div class="index-ranking">
+                        <a href="" title="" class="ranking-first clearfix">
+                            <i></i>
+                            <img src="images/first_1.png" alt="" />
+                            <span>我是第一名</span>
+                            <strong>10万</strong>
+                            <em>游戏</em>
+                        </a>
+                        <a href="" title="" class="ranking-second clearfix">
+                            <i></i>
+                            <img src="images/second_2.png" alt="" />
+                            <span>我是第二名</span>
+                            <strong>10万</strong>
+                            <em>音乐</em>
+                        </a>
+                        <a href="" title="" class="ranking-third clearfix">
+                            <i></i>
+                            <img src="images/third_3.png" alt="" />
+                            <span>我是第三名</span>
+                            <strong>10万</strong>
+                            <em>娱乐</em>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 platform">
+                    <div class="content-head clearfix">
+                        <strong>所有平台排行</strong>
+                        <div class="con-head-right clearfix">
+                            <a href="javascript:;" title="昨日" class="yesterday">昨日</a>
+                            <a href="javascript:;" title="本周" class="week">本周</a>
+                            <a href="javascript:;" title="本月" class="month">本月</a>
+                            <a href="javascript:;" title="流水" class="water">流水</a>
+                            <a href="javascript:;" title="时长" class="duration">时长</a>
+                            <a href="javascript:;" title="粉丝" class="fans">粉丝</a>
+                        </div>
+                    </div>
+                    <div class="index-ranking">
+                        <a href="" title="" class="ranking-first clearfix">
+                            <i></i>
+                            <img src="images/first_1.png" alt="" />
+                            <span>我是第一名</span>
+                            <strong>10万</strong>
+                            <em>游戏</em>
+                        </a>
+                        <a href="" title="" class="ranking-second clearfix">
+                            <i></i>
+                            <img src="images/second_2.png" alt="" />
+                            <span>我是第二名</span>
+                            <strong>10万</strong>
+                            <em>音乐</em>
+                        </a>
+                        <a href="" title="" class="ranking-third clearfix">
+                            <i></i>
+                            <img src="images/third_3.png" alt="" />
+                            <span>我是第三名</span>
+                            <strong>10万</strong>
+                            <em>娱乐</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/style.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-datepicker.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/data.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+    <script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <script type="text/javascript">
+        // 日期调用
+        $("#date_1").datepicker();
+        var chart = new Highcharts.Chart('container', {
+            title: {
+                text: '流水/日活线性图',
+                x: -20
+            },
+            subtitle: {
+                text: '',
+                x: -20
+            },
+            xAxis: {
+                type: 'datetime',
+                dateTimeLabelFormats: {
+                    day: '%Y-%m-%e'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: '万元'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            tooltip: {
+                valueSuffix: '万元'
+            },
+            legend: {
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+                borderWidth: 0
+            },
+            series: [{
+                name: '流水',
+                data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                pointStart: Date.UTC(2017,6,7),//起始时间
+                pointInterval: 1*24 * 3600 * 1000 //时间间隔
+            }, {
+                name: '日活',
+                data: [0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5],
+                pointStart: Date.UTC(2017,6,7),//起始时间
+                pointInterval: 1*24 * 3600 * 1000 //时间间隔
+            }],
+        });
+    </script>
+</html>

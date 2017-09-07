@@ -1,0 +1,1772 @@
+/*头部和左侧栏公共样式*/
+.nav-inner a:hover {
+    text-decoration: none;
+    background: #00b0ec;
+    color: #fff;
+}
+.index-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #1cb1cf;
+    color: #fff;
+    z-index: 10;
+}
+.logo {
+    float: left;
+    width: 200px;
+    height: 78px;
+}
+.logo img {
+    float: left;
+    width: 156px;
+    height: 64px;
+    margin: 7px 12px;
+}
+.login {
+    float: right;
+    height: 78px;
+    padding: 0 60px 0 40px;
+    line-height: 78px;
+    background: url("../images/exit.png") 0 center no-repeat;
+    background-size: 16% auto;
+    cursor: pointer;
+}
+.person-name {
+    float: right;
+    overflow: hidden;
+    height: 78px;
+    padding: 0 60px 0 40px;
+    text-overflow: ellipsis;
+    line-height: 78px;
+    background: url("../images/person.png") 0 center no-repeat;
+    background-size: 10% auto;
+}
+.guild-name {
+    position: relative;
+    float: right;
+    height: 78px;
+    padding: 0 60px 0 40px;
+    text-overflow: ellipsis;
+    line-height: 78px;
+    background: url("../images/friends.png") 0 center no-repeat;
+    background-size: 13% auto;
+}
+.nav-for {
+    background: url("../images/drafts.png") 30px center no-repeat;
+    background-size: 8% auto;
+}
+.nav-left .nav-show {
+    background: #00b0ec;
+}
+.nav-inner li {
+    font-size: 14px;
+}
+.nav-tool {
+    background: url("../images/setting.png") 30px center no-repeat;
+    background-size: 9% auto;
+}
+.nav-guild {
+    background: url("../images/settings.png") 30px center no-repeat;
+    background-size: 9% auto;
+}
+.nav-wage {
+    background: url("../images/settings.png") 30px center no-repeat;
+    background-size: 9% auto;
+}
+.nav-left {
+    padding-top: 25px;
+}
+.index-left {
+    position: fixed;
+    left: 0;
+    top: 78px;
+    width: 200px;
+    height: 600px;
+    background: #383d40;
+    z-index: 9;
+}
+.nav-for, .nav-tool, .nav-guild, .nav-wage {
+    display: block;
+    padding: 10px 0 10px 60px;
+    color: #fff;
+    font-weight: bold;
+}
+.nav-for:hover, .nav-tool:hover, .nav-guild:hover, .nav-wage:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-inner li a {
+    display: block;
+    padding: 10px 0 10px 60px;
+    color: #fff;
+    font-size: 14px;
+}
+.guild-name-s {
+    display: inline-block;
+    width: 100px;
+    height: 24px;
+    border: 1px solid #fff;
+    color: #666;
+    background: #fff;
+    border-radius: 3px;
+    padding-left: 15px;
+    line-height: 24px;
+    outline: none;
+}
+/*业绩报表概况样式*/
+.index-wrap {
+    position: absolute;
+    left: 200px;
+    top: 78px;
+    padding: 0 100px;
+}
+.index-chart-t {
+    margin: 20px 0;
+    padding-left: 60%;
+}
+.index-chart-t > div {
+    float: left;
+}
+.index-chart-b {
+    display: inline-block;
+    width: 120px;
+    height: 24px;
+    border: 1px solid #a0a0a0;
+    border-radius: 3px;
+    padding-left: 8px;
+    line-height: 24px;
+    outline: none;
+}
+.in-chart-all {
+    margin-left: 40px;
+}
+.in-chart-all span {
+    display: inline-block;
+    height: 24px;
+    padding: 0 8px;
+    margin-right: 20px;
+    border-radius: 3px;
+    line-height: 24px;
+    cursor: pointer;
+}
+.chart-show {
+    background:#1cb1cf;
+    color: #fff;
+}
+.cation-data {
+    padding: 35px 0 15px 80px;
+    border-bottom: 1px solid #a0a0a0;
+    color: #222;
+}
+.index-data-left {
+    float: left;
+}
+.index-data-left img {
+    display: block;
+    margin: 0 auto;
+}
+.index-data-left span {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+.index-data-right {
+    float: left;
+    padding-top: 15px;
+    margin-left: 20px;
+    font-size: 12px;
+}
+.index-data-right div {
+    margin: 9px 0;
+}
+.index-chart {
+    height: 350px;
+    margin: 20px 0 0 40px;
+}
+.content-head {
+    border-bottom: 1px solid #a0a0a0;
+}
+.content-head strong {
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.con-head-right {
+    float: right;
+}
+.con-head-right a {
+    display: inline-block;
+    height: 50px;
+    padding: 0 10px;
+    color: #222;
+    line-height: 50px;
+}
+.index-ranking {
+    padding-top: 10px;
+}
+.content-head .yesterday, .content-head .water {
+    color: #188cd6;
+    font-weight: bold;
+}
+.water {
+    border-left: 2px solid #1cb1cf;
+}
+.index-ranking a {
+    display: block;
+    margin-bottom: 15px;
+}
+.index-ranking a:hover, .con-head-right a:hover {
+    text-decoration: none;
+    color: #188cd6;
+    font-weight: bold;
+}
+.ranking-first i {
+    float: left;
+    width: 70px;
+    height: 60px;
+    margin: 0 25px 0 0;
+    background: url("../images/first.png") center center no-repeat;
+    background-size: 90% auto;
+}
+.index-content > div {
+    margin-bottom: 20px;
+}
+.ranking-second i {
+    float: left;
+    width: 70px;
+    height: 60px;
+    margin: 0 25px 0 0;
+    background: url("../images/second.png") center center no-repeat;
+    background-size: 80% auto;
+}
+.ranking-third i {
+    float: left;
+    width: 70px;
+    height: 60px;
+    margin: 0 25px 0 0;
+    background: url("../images/third.png") center center no-repeat;
+    background-size: 60% auto;
+}
+.index-ranking a img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+.index-ranking a span, .index-ranking a strong {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+}
+.index-ranking a span {
+    overflow: hidden;
+    width: 120px;
+    margin: 0 40px 0 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.index-ranking a em {
+    float: right;
+    height: 60px;
+    margin-right: 10px;
+    line-height: 60px;
+}
+/*按主播分类*/
+.live-wrap, .grouping-wrap, .basic-wrap, .gift-wrap, .manage-wrap, .settle-wrap, .detail-wrap {
+    position: absolute;
+    left: 200px;
+    top: 78px;
+}
+.live-head > div {
+    position: relative;
+    float: left;
+    color: #00afa9;
+}
+.live-head em {
+    display: inline-block;
+}
+.live-head span, .live-head .add-pro, .live-head a {
+    display: inline-block;
+    height: 48px;
+    padding: 0 30px;
+    line-height: 48px;
+    cursor: pointer;
+}
+.group-date, .group-mon {
+    height: 48px;
+    padding: 0 8px 0 38px;
+    line-height: 48px;
+}
+.group-mon {
+    padding-left: 80px;
+}
+.live-head ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 120px;
+    background: #fff;
+    z-index: 9;
+        box-shadow: -1px 0px 2px 0px #999, 0px 2px 9px 0px #999;
+}
+.tables .table-fold {
+    background: url(../images/table_f.png) center center no-repeat;
+}
+.tables-f {
+    position: fixed;
+    left: 200px;
+    top: 126px;
+    background: #fff;
+    z-index: 10;
+}
+.tables .table-share {
+    width: 82%;
+    border: 1px solid #a0a0a0;
+    border-radius: 3px;
+}
+.tables .table-share span {
+    padding: 0 25px;
+    font-size: 12px;
+    cursor: pointer;
+    border-right: 1px solid #a0a0a0;
+}
+.table-share span:last-child {
+    border-right: none;
+}
+.collect-t .collected {
+    background: url(../images/collect_1.png) center center no-repeat;
+}
+.chioce-l {
+    background: url(../images/chioce.png) center center no-repeat;
+    background-size: 88% auto;
+}
+.table-first div {
+    cursor: pointer;
+}
+.share-l {
+    background: url(../images/share.png) 10px center no-repeat;
+    background-size: 14% auto;
+}
+.share-d {
+    background: url(../images/delete.png) 10px center no-repeat;
+    background-size: 14% auto;
+}
+.share-m {
+    background: url(../images/reply.png)  10px center no-repeat;
+    background-size: 14% auto;
+}
+.tables .table-fix {
+    width: 300px;
+    border-right: none;
+}
+.live-head ul li {
+    height: 28px;
+    padding-left: 20px;
+    line-height: 28px;
+    color: #222;
+    cursor: pointer;
+}
+.live-head ul li:hover {
+    background: #00b0ec;
+    color: #fff;
+}
+.live-gr {
+    background: url("../images/down.png") right center no-repeat;
+}
+.live-pl {
+    background: url("../images/down.png") right center no-repeat;
+}
+.live-ad {
+    background: url("../images/down.png") right center no-repeat;
+}
+.live-s {
+    background: url("../images/down.png") right center no-repeat;
+}
+.live-sig {
+    margin-right: 15px;
+    background: url("../images/down.png") right center no-repeat;
+}
+.live-t {
+    margin-right: 20px;
+    background: url("../images/down.png") right center no-repeat;
+}
+.living-l {
+    margin: 0 15px 0 10px;
+    cursor: pointer;
+}
+.living-l i {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 19px 10px;
+    border: 1px solid #666;
+}
+.live-now {
+    margin-left: 15px;
+}
+.living-l em, .live-now em {
+    float: left;
+    height: 48px;
+    line-height: 48px;
+}
+.line-live {
+    width: 1px;
+    height: 24px;
+    margin-top: 12px;
+    background: #00b0ec;
+}
+.table-h {
+    border-top: 3px solid #daecf0;
+}
+.table-h tr th {
+    width: 300px;
+    padding: 10px 0;
+    border-right: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+}
+.table-h tr th a:hover {
+    text-decoration: none;
+}
+.live-table {
+    width: 100%;
+    margin-top: 48px;
+}
+.tables {
+    border-left: none;
+}
+.table-h .table-w {
+    width: 560px;
+}
+.table-con {
+    float: left;
+    width: 15%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.table-cont {
+    float: left;
+    width: 25%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer; 
+}
+.table-main div {
+    float: left;
+    width: 33%;
+}
+.tables .table-first {
+    width: 100px;
+    padding-left: 40px;
+    border-right: none;
+}
+.table-first span, .table-first em {
+    float: left;
+}
+.table-first span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 10px 0 0;
+    border: 1px solid #666;
+}
+.table-co {
+    float: left;
+    width: 33%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.table-dow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url("../images/down_1.png") center center no-repeat;
+}
+.table-con-pe div {
+    float: left;
+}
+.collect-table {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/collect.png") center center no-repeat;
+    cursor: pointer;
+}
+.table-live-n, .table-live-id, .table-gift, .table-fans {
+    display: block;
+    margin-bottom: 10px;
+}
+.tables tbody tr {
+    height: 90px;
+}
+.live-head {
+    position: fixed;
+    left: 200px;
+    top: 78px;
+    width: 100%;
+    border-bottom: 3px solid #daecf0;
+    background: #fff;
+    z-index: 16;
+}
+.tables tbody tr td {
+    border-right: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+}
+.collect-t {
+    margin: 22px 25px 0 0;
+}
+.table-none {
+    display: none;
+}
+.table-img {
+    margin: 5px 20px 0 0;
+}
+.table-img img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.tables .table-show {
+    position: relative;
+    width: 6px;
+    background: #81cedd;
+    border: none;
+}
+.table-show span {
+    position: absolute;
+    left: -14px;
+    top: 0;
+    width: 31px;
+    height: 63px;
+    background: url("../images/table_s.png") center center no-repeat;
+    z-index: 6;
+    cursor: pointer;
+}
+.table-name {
+    padding-top: 10px;
+    margin: 0 100px 0 0 ;
+}
+.table-g {
+    padding-top: 10px;
+    margin: 0 100px 0 0 ;
+}
+.tables .table-main {
+    width: 570px;
+}
+.table-music {
+    height: 100%;
+    line-height: 70px;
+}
+/*按分组页面样式*/
+.grouping-table {
+    width: 100%;
+    table-layout: fixed;
+    border-top: 1px solid #a0a0a0;
+    border-left: 1px solid #a0a0a0;
+}
+.grouping-table tr {
+    height: 50px;
+}
+.grouping-table th, .grouping-table td {
+    text-align: center;
+    border-right: 1px solid #a0a0a0;
+    border-bottom: 1px solid #a0a0a0;
+}
+.table-gro tr:first-child th {
+    width:400px;
+}
+.goruping-t, .wage-t, .proportion-t {
+    margin: 60px 0 0 20px;
+}
+.grouping-table tr td img {
+    display: inline-block;
+    width: 20px;
+    height: auto;
+}
+/*基本设置页面样式*/
+.basic-con {
+    margin-top: 48px;
+    padding: 20px 0 0 20px;
+}
+.basic-h, .basic-b {
+    width: 800px;
+    height: 182px;
+    border: 1px solid #a0a0a0;
+    border-radius: 1px;
+}
+.basic-h dl {
+    padding: 20px 0 0 30px;
+}
+.basic-h dl dt {
+    float: left;
+    overflow: hidden;
+    width: 85px;
+    height: 85px;
+    border: 1px solid #a0a0a0;
+    border-radius: 1px;
+}
+.basic-h dl dt img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.basic-h dl dd {
+    float: left;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+.basic-name {
+    margin-bottom: 20px;
+}
+.basic-modify {
+    width: 60px;
+    height: 30px;
+    margin: 30px  0 0 40px;
+    color: #00afa9;
+    cursor: pointer;
+    text-align: center;
+}
+.basic-left {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 85px;
+    height: 85px;
+    border: 1px solid #3bd6d1;
+}
+.basic-upload div img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.basic-form {
+    padding: 20px 0 0 30px;
+}
+.basic-upload span {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 85px;
+    height: 85px;
+    line-height: 85px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    cursor: pointer;
+}
+.bacsic-file {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 85px;
+    height: 85px;
+    opacity: 0;
+    cursor: pointer;
+}
+.basic-right {
+    float: left;
+    margin-left: 15px;
+}
+.basic-right input {
+    display: block;
+    width: 120px;
+    height: 30px;
+    padding-left: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #00afa9;
+    border-radius: 3px;
+    line-height: 30px;
+    outline: none;
+}
+.basic-b {
+    display: none;
+    margin-top: 40px;
+}
+.basic-modify-b {
+    color: #00afa9;
+    margin: 30px 0 0 10px; 
+}
+.basic-modify-b span, .basic-modify-b button {
+    float: left;
+    width: 60px;
+    height: 30px;
+    margin-right: 10px;
+    line-height: 30px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+.basic-sub {
+    outline: none;
+    border: none;
+    background: #fff;
+}
+/*刷礼物记录样式*/
+.gift-con {
+    margin: 48px 0 0 50px;
+}
+.gift-table {
+    width: 80%;
+    table-layout: fixed;
+}
+.gift-table tr {
+    height: 40px;
+}
+.add-gift {
+    margin: 80px 0 20px;
+    color: #1cb1cf;
+    font-size: 14px;
+    cursor: pointer;
+}
+.gift-table thead tr {
+    color: #666;
+}
+.gift-table tbody tr {
+    font-size: 12px;
+}
+.cl-gift a, .del-gift {
+    color: #1cb1cf; 
+    cursor: pointer;
+}
+.add-gift-con {
+    display: none;
+    margin-bottom: 30px;
+}
+.add-gift-con div {
+    float: left;
+    margin-right: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.add-gift-con input {
+    outline: none;
+    border: none;
+    height: 20px;
+    width: 95%;
+}
+.add-date, .add-account, .add-virtual, .add-platform, .add-id {
+    position: relative;
+    width:105px;
+    padding-left: 8px;
+    height: 24px;
+    border: 1px solid #a0a0a0;
+    border-radius: 2px;
+    line-height: 24px;
+    background: url("../images/add_1.png") 90px center no-repeat;
+}
+.add-list {
+    display: none;
+    position: absolute;
+    left: 0;
+    width:105px;
+    bottom: -150px;
+    box-shadow: -1px 0px 2px 0px #999, 0px 2px 9px 0px #999;
+    background: #fff;
+}
+.add-list li {
+    height: 28px;
+    padding-left: 20px;
+    line-height: 28px;
+    color: #222;
+    cursor: pointer;
+}
+.add-list li:hover {
+    background: #00b0ec;
+    color: #fff;
+}
+.add-file {
+    position: relative;
+    width:105px;
+    padding-left: 8px;
+    height: 24px;
+    border: 1px solid #a0a0a0;
+    border-radius: 2px;
+    line-height: 24px;
+    background: url("../images/upload_1.png") 10px center no-repeat;
+}
+.add-file i {
+    width:90px;
+    padding-left: 30px;
+    height: 24px;
+    line-height: 24px;
+}
+.add-file input {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.add-comdity span {
+    float: left;
+    height: 24px;
+    width: 40px;
+    line-height: 24px;
+    color: #1cb1cf;
+    cursor: pointer;
+}
+.add-alert {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+}
+.add-alert-con {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 550px;
+    height: 90px;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 12px;
+}
+.add-alert-h {
+    width: 100%;
+    padding-left: 20px;
+    height: 35px;
+    border-bottom: 1px solid #a0a0a0;
+    line-height: 35px;
+    font-weight: bold;
+}
+.add-alert-b {
+    margin-top: 15px;
+}
+.add-alert-b input, .add-alert-b  select, .add-alert-b span {
+    width: 120px;
+    height: 24px;
+    margin-left: 10px;
+    line-height: 24px;
+    padding-left: 10px;
+}
+.add-alert-b span {
+    color: #1cb1cf;
+    cursor: pointer;
+}
+.manage-con {
+    font-size: 12px;
+    padding: 80px 0 0 30px;
+}
+.manage-table {
+    width: 100%;
+}
+.manage-table tr {
+    height: 40px;
+    line-height: 40px;
+}
+.cl-take {
+    color: #1cb1cf;
+}
+.manage-com {
+    margin-right: 15px;
+}
+.manage-table tbody span {
+    color: #1cb1cf;
+    cursor: pointer;
+}
+.add-manage {
+    margin-top: 20px;
+    font-size: 12px;
+}
+.add-manage-group {
+    color: #1cb1cf;
+    cursor: pointer;
+}
+.add-manage-cont {
+    display: none;
+    margin: 20px 0;
+    font-size: 12px;
+}
+.add-manage-cont input {
+    width: 140px;
+    height: 25px;
+    padding-left: 8px;
+    margin-right: 30px;
+    border: 1px solid #a0a0a0;
+    border-radius: 3px;
+    line-height: 25px;
+    outline: none;
+}
+.add-manage-cont span {
+    margin-right: 15px;
+    color: #1cb1cf;
+    cursor: pointer;
+}
+.man-name input {
+    display: none;
+    width:60px;
+    height: 20px;
+    outline: none;
+}
+/*设置比例样式*/
+.wage-table, .proportion-table, .proportion-table2 {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 12px;
+}
+.wage-table tbody tr {
+    height: 100px;
+}
+.wage-table tbody tr td em, .wage-table tbody tr td i, .wage-table tbody tr td span {
+    display: block;
+    color: #666;
+}
+.wage-t {
+    margin-top: 80px;
+}
+.wage-table tr th, .wage-table tr td {
+    text-align: center;
+}
+.wage-table tr th {
+    color: #666;
+}
+.wage-person dl {
+    padding-left: 18px;
+}
+.wage-person dl dt {
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.wage-p {
+    color: #1cb1cf;
+}
+.wage-person dl dd {
+    float: left;
+    width: 100px;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+.wage-person dl dd p {
+    margin-bottom: 10px;
+    text-align: left;
+}
+.wage-img-per {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.wage-plat {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width:15px;
+    height: 15px;
+}
+.wage-table .wage-settlement {
+    display: block;
+    width: 40px;
+    height: 18px;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background: #00b0ec;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+.wage-mon em {
+    margin: 0 10px;
+    color: red;
+    font-weight: bold;
+}
+/*比例设置样式*/
+.proportion-t {
+    margin: 60px 0 0 40px;
+}
+.proportion-table tr td > div {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.proportion-table tbody tr {
+    border-bottom: 1px solid #a0a0a0;
+}
+.proportion-table .pro-edit, .proportion-table .pro-del {
+    display: inline-block;
+    width: 50px;
+    height: 18px;
+    padding: 0;
+    border: none;
+    margin-left: 15px;
+    border-radius: 3px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+.proportion-table .pro-edit {
+    color: #fff;
+    background: #1cb1cf;
+}
+.proportion-table .pro-del {
+    background: #a0a0a0;
+}
+.pro-head {
+    width: 100%;
+    height: 48px;
+    padding-left: 40px;
+    line-height: 48px;
+    border-bottom: 3px solid #daecf0;
+}
+.proportion-table2 .pro-set {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #1cb1cf;
+    cursor: pointer;
+    font-size: 12px;
+}
+.proportion-table2 .pro-set:hover {
+    background: none;
+    color: #1cb1cf;
+}
+.proportion-table2 thead tr, .proportion-table thead tr {
+    border-bottom: 1px solid #a0a0a0;
+}
+.proportion-table thead tr {
+    height: 50px;
+}
+.alert-for-l {
+    float: left;
+    width: 50%;
+    padding-left: 50px;
+}
+.alert-for-l span, .alert-for-r span {
+    display: block;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.alert-form {
+    padding-bottom: 50px;
+}
+.alert-for-l select, .alert-for-r input {
+    width: 40%;
+    height: 20px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+.alert-for-r {
+    float: left;
+    width: 50%;
+    padding-left: 50px;
+}
+.live-head .add-pro {
+    border: none;
+    background: none;
+    color: #1cb1cf;
+}
+.live-head .add-pro:hover {
+    background: none;
+    color: #1cb1cf;
+}
+.new-form {
+    padding: 20px 25px;
+    font-size: 12px;
+}
+.new-all li {
+    float: left;
+}
+.new-form div {
+    margin-bottom: 20px;
+}
+.new-alet-n span, .new-wage span {
+    display:inline-block;
+    height: 24px;
+    margin-right: 15px;
+    line-height: 24px;
+}
+.new-alet-n input, .new-wage input {
+    display:inline-block;
+    width: 100px;
+    height: 24px;
+    padding-left: 8px;
+    border-radius: 3px;
+    border: 1px solid #a0a0a0;
+    line-height: 24px; 
+}
+.new-all-con li:nth-child(1), .new-all-con li:nth-child(3) {
+    width: 30%;
+}
+.new-all-con li:nth-child(2), .new-all-con li:nth-child(5) {
+    width: 10%;
+}
+.new-all-con li:nth-child(4) {
+    width: 20%;
+}
+.new-all-con li {
+    float: left;
+}
+.new-all-num ul {
+    margin-top: 15px;
+}
+.new-all-con input {
+    width: 90%;
+    height: 24px;
+    padding-left: 8px;
+    border: 1px solid #a0a0a0;
+    border-radius: 3px;
+    line-height: 24px;
+} 
+.new-del {
+    color: #1cb1cf;
+    cursor: pointer;
+    text-align: center;
+}
+.new-add-new {
+    color: #1cb1cf;
+    font-size: 14px;
+    cursor: pointer;
+}
+/*结算设置*/
+.settlement-t span, .settlement-e span {
+    float: left;
+    height: 26px;
+    margin-right: 120px;
+    line-height: 26px;
+    text-align: center;
+}
+.settlement-t, .settlement-e {
+    padding: 15px 15px;
+    margin-bottom: 30px;
+    background: #def7ff;
+}
+.settlement-e {
+    display: none;
+}
+.settle-set, .settle-sure, .settle-cancel {
+    width: 56px;
+    color: #fff;
+    border-radius: 3px;
+    background: #1cb1cf;
+    cursor: pointer;
+}
+.settlement-time .settle-sure {
+    margin-right: 30px;
+}
+.settle-cancel {
+    background: #fff;
+    color: #000;
+}
+.settle-wrap div {
+    font-size: 14px;
+}
+.settlement-e input {
+    width: 120px;
+    height: 26px;
+    border: 1px solid #1cb1cf;
+    border-radius: 3px;
+    padding-left: 8px;
+    line-height: 26px;
+}
+.settle-head {
+    padding-left: 30px;
+}
+.live-settle {
+    width: 100%;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+.plat-name select, .settle-in, .add-manage-cont select {
+    width:80px;
+    height: 26px;
+    border: 1px solid #a0a0a0;
+    border-radius: 3px;
+    padding-left: 5px;
+    line-height: 26px;
+}
+.add-settle {
+    margin-top: 40px;
+}
+.settle-num, .settle-number {
+    text-align: center;
+}
+.settle-sel {
+    margin-right: 84px;
+}
+.live-settle .settle-tit {
+    margin-top: 15px;
+    color: red;
+    font-size: 12px;
+}
+.month-wrap {
+    padding: 60px 30px;
+}
+.month-table {
+    border-top: 1px solid #a0a0a0;
+    border-left: 1px solid #a0a0a0;
+}
+.month-table tr {
+    height: 40px;
+}
+.month-table th, .month-table td {
+    width: 200px;
+    text-align: center;
+    border-right: 1px solid #a0a0a0;
+    border-bottom: 1px solid #a0a0a0;
+}
+.month-head {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: bold;
+}
+.month-tbody input {
+    width: 100px;
+    height: 28px;
+    border: none;
+    border-radius: 3px;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+/*主播详情页面*/
+.detail-wrap {
+    top: 130px;
+}
+.live-head a {
+    padding: 0 15px;
+    color: #00afa9;
+}
+.live-detail-h {
+    padding-left: 200px;
+}
+.live-head .live-now-d {
+    color: #666;
+}
+.live-now-d em {
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+}
+.live-now-d em:nth-child(1) {
+    margin-left: 40px;
+}
+.living-d .live-de {
+    padding: 0 30px;
+}
+.live-detail-h a:hover {
+    text-decoration: none;
+}
+.live-d-con {
+    padding: 0 100px;
+}
+.detail-con-h {
+    padding: 20px 0;
+    border-bottom: 1px solid #a0a0a0;
+}
+.detail-con-h > div {
+    float: left;
+    height: 82px;
+}
+.detail-person {
+    width: 30%;
+    padding: 7px;
+    color: #fff;
+    background: #42dad5;
+}
+.detail-person dl {
+    float: left;
+    width: 58%;
+}
+.detail-person dl dt {
+    float: left;
+    width: 68px;
+    height: 68px;
+}
+.detail-person dl dt img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.detail-person dl dd {
+    float: left;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+.detail-id {
+    margin-top: 8px;
+    font-size: 12px;
+}
+.detail-line {
+    float: left;
+    width: 1px;
+    height: 100%;
+    margin: 0 10px;
+    background: #fff;
+}
+.detail-line2 {
+    float: left;
+    width: 1px;
+    height: 100%;
+    margin: 0 10px;
+    background: #a0a0a0;
+}
+.detail-id img {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.detail-person-r {
+    float: left;
+    width: 35%;
+    padding-top: 10px;
+}
+.detail-person-r div {
+    float: left;
+    width: 50%;
+}
+.detail-person-r div p, .detail-p-list div p, .detail-p-last div p {
+    text-align: center;
+}
+.detail-person-r div span, .detail-p-list div span, .detail-p-last div span {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+.detail-p-list div span, .detail-p-last div span {
+    color: #888;
+}
+.detail-p-list {
+    width: 20%;
+    padding-top: 18px;
+}
+.detail-p-last {
+    width: 8%;
+    padding-top: 18px;
+}
+.detail-p-list div {
+    float: left;
+    width: 50%;
+}
+.chart-h {
+    margin: 20px 0;
+}
+.chart-h > div {
+    float: left; 
+}
+.chart-h > div input {
+    display: inline-block;
+    width: 130px;
+    height: 27px;
+    padding-left: 5px;
+    border: 1px solid #a0a0a0;
+    border-radius: 3px;
+    line-height: 27px;
+    outline: none;
+}
+.chart-h > div span {
+    display: inline-block;
+    padding: 0 10px;
+    height: 27px;
+    border-radius: 3px;
+    line-height: 27px;
+}
+.chart-add, .chart-time-s, .chart-date-d {
+    border-left: 1px solid #a0a0a0;
+    padding: 0 30px;
+}
+.chart-le {
+    height: 27px;
+    line-height: 27px;
+    font-weight: bold;
+}
+.chart-date-e {
+    margin-right: 40px;
+}
+.chart-h .chart-choice {
+    background: #1cb1cf;
+    color: #fff;
+}
+.chart-date-s {
+    margin: 0 40px 0 50px;
+}
+.detail-table tr th {
+    width: 16%;
+}
+.detail-table thead tr {
+    height: 50px;
+}
+.detail-table tbody tr {
+    height: 30px;
+}
+.detail-table thead tr th {
+    padding-left: 40px;
+}
+.detail-table tbody tr td {
+    padding-left: 40px;
+}
+.detail-table {
+    width: 100%;
+    border: 1px solid #a0a0a0;
+    table-layout: fixed;
+    outline: none; 
+}
+.detail-num {
+    padding: 20px 0 20px 50px;
+    font-weight: bold;
+}
+.follow-list li {
+    width: 50%;
+    padding: 10px 0;
+    border-bottom: 1px solid #a0a0a0;
+}
+.follow-h > div {
+    float: left;
+}
+.follow-con, .detail-gift-con, .detail-in-con {
+    padding: 20px 30px;
+    border: 1px solid #a0a0a0;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+.follow-h {
+    margin-bottom: 15px;
+}
+.follow-ed {
+    margin-left: 50px;
+}
+.follow-ed span {
+    margin-right: 20px;
+    color: #1cb1cf;
+    cursor: pointer;
+}
+.follow-list li p {
+    width: 100%;
+}
+.follow-add {
+    margin: 20px 0;
+    color: #1cb1cf;
+    cursor: pointer;
+}
+.follow-add-con, .follow-e-con {
+    display: none;
+}
+.follow-add-con textarea, .follow-e-con textarea {
+    display: block;
+    width: 100%;
+    padding: 5px 8px;
+    font-size: 14px;
+    color: #222;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: none;
+    outline: none;
+}
+.follow-add-s {
+    margin: 20px 0 50px;
+}
+.follow-add-s span {
+    margin-right: 30px;
+    color: #1cb1cf;
+    cursor: pointer;
+}
+.detail-add-gift {
+    margin-top: 0;
+}
+.detail-in-content li {
+    margin-bottom: 15px;
+}
+.detail-in-content li em {
+    float: left;
+    width: 100px;
+    height: 34px;
+    margin-right: 50px;
+    color: #666;
+    line-height: 34px;
+}
+.detail-in-content li div {
+    float: left;
+}
+.detail-in-content li div span, .detail-in-r p {
+    height: 34px;
+    line-height: 34px;
+}
+.detail-in-n {
+    display: none;
+    width: 200px;
+    height: 34px;
+    padding-left: 10px;
+    border: 1px solid #a0a0a0;
+    border-radius: 3px;
+    line-height: 34px;
+    outline: none;
+}
+.detail-in-e {
+    width:50px;
+    margin-top: 30px;
+    color: #1cb1cf;
+    cursor: pointer;
+}
+.detail-in-now {
+    display: none;
+    margin-top: 30px;
+    color: #1cb1cf;
+}
+.detail-in-now span {
+    margin-right: 30px;
+    cursor: pointer;
+}
+/*添加主播页面*/
+.add-live-plat, .add-id-l, .add-live-manage {
+    display: inline-block;
+    width: 160px;
+    height: 30px;
+    border: 1px solid #a0a0a0;
+    border-radius: 3px;
+    padding-left: 8px;
+    line-height: 30px;
+    outline: none;
+}
+.manage-con-add {
+    font-size: 14px;
+    padding: 80px 0 0 30px;
+}
+.add-manage-l {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.add-live-end button {
+    width: 60px;
+    height: 32px;
+    margin-top: 30px;
+    border-radius: 3px;
+    background: #1cb1cf;
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+/*公会设置页面*/
+.guild-set {
+    width: 100%;
+    background: url("../images/guild_bac.jpg") 0 0 no-repeat;
+    background-size: 100% auto;
+}
+.guild-set-c {
+    padding-top: 150px;
+}
+.guild-set-c form {
+    width: 458px;
+    margin: 0 auto;
+    padding: 30px 0 25px;
+    border-radius: 5px;
+    background: rgba(200, 200, 200, 0.3);
+}
+.guild-set-h img {
+    display: block;
+    width: 167px;
+    height: 40px;
+    margin: 0px auto 26px;
+}
+.guild-logo {
+    position: relative;
+    width: 114px;
+    height: 114px;
+    margin: 0 auto 30px;
+    border-radius: 3px;
+    background: #d7d9da;
+}
+.guild-img em {
+    display: block;
+    height: 70px;
+    color: #666;
+    line-height: 70px;
+    text-align: center;
+    font-size: 18px;
+}
+.guild-img span {
+    display: block;
+    width: 100%;
+    color: #00a0e9;
+    font-size: 12px;
+    text-align: center;
+}
+.guild-logo input {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.guild-name-set input, .guild-man-set input, .guild-login-r input, .guild-register-c input, .guild-password-c input {
+    display: block;
+    width: 290px;
+    height: 47px;
+    margin: 0 auto;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+.guild-man-set, .login-pass {
+    margin: 16px 0 20px;
+}
+.guild-sub button {
+    display: block;
+    width: 300px;
+    height: 47px;
+    margin: 0 auto;
+    color: #fff;
+    background: #00a0e9;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 18px;
+}
+/*登录页面*/
+.guild-login {
+    position: relative;
+    width: 100%;
+    background: url("../images/login_bac.jpg") 0 0 no-repeat;
+    background-size: 100% auto;
+}
+.guild-login-r {
+    position: absolute;
+    right: 100px;
+    top: 150px;
+}
+.guild-login-r form, .guild-register-c form, .guild-password-c form {
+    width: 392px;
+    margin: 0 auto;
+    padding: 30px 0 25px;
+    border-radius: 5px;
+    background: rgba(200, 200, 200, 0.3);
+}
+.login-for {
+    width:290px;
+    margin: 0 auto 30px;
+}
+.login-for a {
+    height: 47px;
+    line-height: 47px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.guild-login-r .login-for a:hover {
+    text-decoration: none;
+    color: #2dbcfd;
+}
+.login-l {
+    float: left;
+    color: #2dbcfd;
+}
+.login-r {
+    float: right;
+    color: #ea8c4d;
+}
+/*注册页面*/
+.guild-register-c {
+    padding-top: 100px;
+}
+.guild-register-s, .register-else {
+    width: 290px;
+    margin: 20px auto;
+}
+.guild-register-s .register-tel {
+    float: left;
+    width: 156px;
+}
+.register-i {
+    float: right;
+    position: relative;
+}
+.register-num {
+    display: block;
+    width: 114px;
+    height: 47px;
+    color: #fff;
+    border-radius: 3px;
+    background: #0c8ecb;
+    line-height: 47px;
+    text-align: center;
+    cursor: pointer;
+}
+.register-i i {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 114px;
+    height: 47px;
+    opacity: 0;
+}
+.guild-register-pass {
+    margin-bottom: 30px;
+}
+.register-else {
+    font-size: 12px;
+}
+.register-else a {
+    float: left;
+    height: 30px;
+    color: #1cb1cf;
+    line-height: 30px;
+}
+.register-else div {
+    float: right;
+}
+.register-else > a:hover {
+    color: #fff;
+}
+.register-else div i {
+    float: right;
+    width: 10px;
+    height: 10px;
+    margin: 10px 6px 0 0;
+    border: 1px solid #fff;
+}
+.register-else div a {
+    float: right;
+    color: #fff;
+}
+/*修改密码页面*/
+.guild-password-c {
+    padding-top: 100px;
+}
+.password-else {
+    margin-top: 20px;
+}
+.password-else a:hover {
+    color: #fff;
+}
+.password-else a {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    color: #1cb1cf;
+    text-align: center;
+}

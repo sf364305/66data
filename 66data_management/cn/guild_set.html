@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>公会设置</title>
+        <meta name="keywords" content="主播数据管理中心">
+        <meta name="description" content="主播数据管理中心">
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+        <!-- <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script> -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="guild-set">
+            <div class="guild-set-c">
+                <form action="" method="" name="">   
+                    <div class="guild-set-h"><img src="../images/guild_1.png" alt=""/></div>
+                    <div class="guild-logo">
+                        <div class="guild-img">
+                            <em>LOGO</em>
+                            <span>点击上传</span>
+                        </div>
+                        <input type="file" class="guild-logo-f"/>
+                    </div>
+                    <div class="guild-name-set">
+                        <input type="text" placeholder="输入公会名称"/>
+                    </div>
+                    <div class="guild-man-set">
+                        <input type="text" placeholder="输入管理员名称"/>
+                    </div>
+                    <div class="guild-sub">
+                        <button type="submit">保存</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var windowS = $(window).height();
+            $(".guild-set").css({
+                "height": windowS
+            })
+        })
+    </script>
+</html>

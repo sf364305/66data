@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>刷礼物记录</title>
+        <meta name="keywords" content="主播数据管理中心">
+        <meta name="description" content="主播数据管理中心">
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+        <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="index-header clearfix">
+            <a href="" title="" class="logo"><img src="../images/logo.png" alt="" /></a>
+            <div class="login">退出</div>
+            <div class="person-name">迷恋哥的传说</div>
+            <div class="guild-name">超强公会</div>
+        </header>
+        <div class="index-left">
+            <ul class="nav-left">
+                <li>
+                    <a href="javascript:;" class="nav-for nav-slide" title="业绩报表">业绩报表</a>
+                    <ul class="nav-inner">
+                        <li><a href="../index.html" title="概况">概况</a></li>
+                        <li><a href="live.html" title="按主播">按主播</a></li>
+                        <li><a href="grouping.html" title="按分组">按分组</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-tool nav-slide" title="工具箱">工具箱</a>
+                    <ul class="nav-inner">
+                        <li><a href="" class="nav-show" title="刷礼物纪录">刷礼纪录</a></li>
+                        <li><a href="month.html" title="月度目标">月度目标</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-guild nav-slide" title="公会设置">公会设置</a>
+                    <ul class="nav-inner">
+                        <li><a href="bacsic.html" title="基本设置">基本设置</a></li>
+                        <li><a href="management.html" title="分组管理">分组管理</a></li>
+                        <li><a href="add_live.html" title="按主播">按主播</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-wage nav-slide" title="工资结算">工资结算</a>
+                    <ul class="nav-inner">
+                        <li><a href="proportion_set.html" title="设置比例">设置比例</a></li>
+                        <li><a href="wage_set.html" title="结算工资">结算工资</a></li>
+                        <li><a href="" title="结算设置">结算设置</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="gift-wrap">
+            <div class="live-head clearfix">
+                <div class="live-grouping live-ho">
+                    <span class="live-gr">2017-08</span>
+                    <ul class="live-dif">
+                        <li>2017-08</li>
+                        <li>2017-09</li>
+                        <li>2017-02</li>
+                        <li>2017-04</li>
+                    </ul>
+                </div>
+                <div class="live-grouping live-ho">
+                    <span class="live-gr">操作人</span>
+                    <ul class="live-dif">
+                        <li>豪门</li>
+                        <li>帅哥</li>
+                        <li>美女</li>
+                    </ul>
+                </div>
+                <div class="live-grouping live-ho">
+                    <span class="live-gr">支出账号</span>
+                    <ul class="live-dif">
+                        <li>豪门</li>
+                        <li>帅哥</li>
+                        <li>美女</li>
+                        <li>美男</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gift-con">
+                <div class="add-gift">+新增刷礼物记录</div>
+                <div class="add-gift-con clearfix">
+                    <div class="add-date">
+                        <input type="text" value="2017-08-28"/>
+                    </div>
+                    <div class="add-account add-hover">
+                        <span>支出账号</span>
+                        <ul class="add-list">
+                            <li>陌陌号</li>
+                            <li>静心号</li>
+                            <li class="add-new-acount">+新增账号</li>
+                        </ul>
+                    </div>
+                    <div class="add-virtual">
+                        <input type="text" value="" placeholder="支出虚拟币"/>
+                    </div>
+                    <div class="add-platform add-hover">
+                        <span>选择平台</span>
+                        <ul class="add-list">
+                            <li>陌陌</li>
+                            <li>花椒</li>
+                            <li>映客</li>
+                            <li>火山</li>
+                            <li>一直播</li>
+                            <li>快手</li>
+                        </ul>
+                    </div>
+                    <div class="add-id">
+                        <input type="text" value="" placeholder="收到礼物主播"/>
+                    </div>
+                    <div class="add-file">
+                        <i>上传截图</i>
+                        <input type="file" value="" class="add-upload"/>
+                    </div>
+                    <div class="add-comdity clearfix">
+                        <span class="add-save">保存</span>
+                        <span class="add-cancle">取消</span>
+                    </div>
+                </div>
+                <div class="gift-t">
+                    <table class="gift-table">
+                        <thead>
+                            <tr>
+                                <th>时间</th>
+                                <th>支出账号</th>
+                                <th>支出虚拟币</th>
+                                <th>等值人民币</th>
+                                <th>收礼物主播</th>
+                                <th>操作人</th>
+                                <th>截图</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2017-8-21</td>
+                                <td>逗逗逗</td>
+                                <td>16541</td>
+                                <td>5015</td>
+                                <td>小小美</td>
+                                <td>黄涛</td>
+                                <td class="cl-gift"><a href="">点击查看</a></td>
+                                <td class="del-gift">删除</td>
+                            </tr>
+                            <tr>
+                                <td>2017-8-21</td>
+                                <td>逗逗逗</td>
+                                <td>16541</td>
+                                <td>5015</td>
+                                <td>小小美</td>
+                                <td>黄涛</td>
+                                <td class="cl-gift"><a href="">点击查看</a></td>
+                                <td class="del-gift">删除</td>
+                            </tr>
+                            <tr>
+                                <td>2017-8-21</td>
+                                <td>逗逗逗</td>
+                                <td>16541</td>
+                                <td>5015</td>
+                                <td>小小美</td>
+                                <td>黄涛</td>
+                                <td class="cl-gift"><a href="">点击查看</a></td>
+                                <td class="del-gift">删除</td>
+                            </tr>
+                            <tr>
+                                <td>2017-8-21</td>
+                                <td>逗逗逗</td>
+                                <td>16541</td>
+                                <td>5015</td>
+                                <td>小小美</td>
+                                <td>黄涛</td>
+                                <td class="cl-gift"><a href="">点击查看</a></td>
+                                <td class="del-gift">删除</td>
+                            </tr>
+                            <tr>
+                                <td>2017-8-21</td>
+                                <td>逗逗逗</td>
+                                <td>16541</td>
+                                <td>5015</td>
+                                <td>小小美</td>
+                                <td>黄涛</td>
+                                <td class="cl-gift"><a href="">点击查看</a></td>
+                                <td class="del-gift">删除</td>
+                            </tr>
+                            <tr>
+                                <td>2017-8-21</td>
+                                <td>逗逗逗</td>
+                                <td>16541</td>
+                                <td>5015</td>
+                                <td>小小美</td>
+                                <td>黄涛</td>
+                                <td class="cl-gift"><a href="">点击查看</a></td>
+                                <td class="del-gift">删除</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="add-alert">
+            <div class="add-alert-con">
+                <div class="add-alert-h">新增账号</div>
+                <form action="" method="" name="">            
+                    <div class="add-alert-b">
+                        <select name=""> 
+                            <option value="0">陌陌</option> 
+                            <option value="1">花椒</option>
+                            <option value="0">映客</option> 
+                            <option value="1">一直播</option>
+                            <option value="0">快手</option> 
+                            <option value="1">火山</option>
+                        </select>
+                        <input type="text" placeholder="昵称" value="" name="" class="alert-name"/>
+                        <input type="text" placeholder="ID" class="alert-id" value="" name=""/>
+                        <span class="alert-save">保存</span>
+                        <span class="alert-cancle">取消</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="../js/style.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // 选择分类
+            $(".live-ho, .add-hover").hover(function() {
+                console.log(666)
+                $(this).children("ul").css({
+                    "display": "block"
+                })
+                var liH = $(this).children("ul").height();
+                $(this).children("ul").css({
+                    "bottom": -liH
+                })
+            }, function() {
+                $(this).children("ul").css({
+                    "display": "none"
+                })
+            });
+            $(".add-list li").click(function() {
+                var tex = $(this).html();
+                $(this).parent().css("display","none");
+                if(tex != "+新增账号") {    
+                    $(this).parent().siblings("span").html(tex);
+                }
+            })
+            // 新增刷礼物记录
+            $(".add-gift").click(function() {
+                $(".add-gift-con").css("display", "block");
+            })
+            // 保存
+            $(".add-save").click(function() {
+                $(".add-gift-con").css("display", "none");
+            })
+            // 取消
+            $(".add-cancle").click(function() {
+                $(".add-gift-con").css("display", "none");
+            })
+            // 新增账号弹窗
+            $(".add-new-acount").click(function() {
+                $(".add-alert").css("display", "block");
+            })
+            // 保存
+            $(".alert-save").click(function() {
+                $(".add-alert").css("display", "none");
+            })
+            // 取消
+            $(".alert-cancle").click(function() {
+                $(".add-alert").css("display", "none");
+            })
+        })
+    </script>
+</html>

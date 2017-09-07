@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>按主播</title>
+        <meta name="keywords" content="主播数据管理中心">
+        <meta name="description" content="主播数据管理中心">
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+        <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="index-header clearfix">
+            <a href="" title="" class="logo"><img src="../images/logo.png" alt="" /></a>
+            <div class="login">退出</div>
+            <div class="person-name">迷恋哥的传说</div>
+            <div class="guild-name">超强公会</div>
+        </header>
+        <div class="index-left">
+            <ul class="nav-left">
+                <li>
+                    <a href="javascript:;" class="nav-for nav-slide" title="业绩报表">业绩报表</a>
+                    <ul class="nav-inner">
+                        <li><a href="../index.html" title="概况">概况</a></li>
+                        <li><a href="" title="按主播" class="nav-show">按主播</a></li>
+                        <li><a href="grouping.html" title="按分组">按分组</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-tool nav-slide" title="工具箱">工具箱</a>
+                    <ul class="nav-inner">
+                        <li><a href="gift.html" title="刷礼物纪录">刷礼纪录</a></li>
+                        <li><a href="month.html" title="月度目标">月度目标</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-guild nav-slide" title="公会设置">公会设置</a>
+                    <ul class="nav-inner">
+                        <li><a href="bacsic.html" title="基本设置">基本设置</a></li>
+                        <li><a href="management.html" title="分组管理">分组管理</a></li>
+                        <li><a href="add_live.html" title="按主播">按主播</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-wage nav-slide" title="工资结算">工资结算</a>
+                    <ul class="nav-inner">
+                        <li><a href="proportion_set.html" title="设置比例">设置比例</a></li>
+                        <li><a href="wage_set.html" title="结算工资">结算工资</a></li>
+                        <li><a href="" title="结算设置">结算设置</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="live-wrap">
+            <div class="live-head clearfix">
+                <div class="live-grouping live-ho">
+                    <span class="live-gr">分组</span>
+                    <ul class="live-dif">
+                        <li>一组</li>
+                        <li>二组</li>
+                        <li>三组</li>
+                        <li>四组</li>
+                    </ul>
+                </div>
+                <div class="live-plat live-ho">
+                    <span class="live-pl">平台</span>
+                    <ul class="live-dif">
+                        <li>花椒</li>
+                        <li>陌陌</li>
+                        <li>映客</li>
+                        <li>火山</li>
+                        <li>熊猫</li>
+                        <li>快手</li>
+                    </ul>
+                </div>
+                <div class="live-address live-ho">
+                    <span class="live-ad">地区</span>
+                    <ul class="live-dif">
+                        <li>中国</li>
+                        <li>厦门</li>
+                        <li>深圳</li>
+                        <li>北京</li>
+                    </ul>
+                </div>
+                <div class="live-sex  live-ho">
+                    <span class="live-s">性别</span>
+                    <ul class="live-dif">
+                        <li>男</li>
+                        <li>女</li>
+                        <li>未知</li>
+                        <li>所有</li>
+                    </ul>
+                </div>
+                <div class="live-signed  live-ho">
+                    <span class="live-sig">签约类型</span>
+                    <ul class="live-dif">
+                        <li>未签约</li>
+                        <li>线上签约</li>
+                        <li>线下签约</li>
+                    </ul>
+                </div>
+                <div class="line-live"></div>
+                <div class="living-l clearfix">
+                    <i></i>
+                    <em>直播中</em>
+                </div>
+                <div class="living-l clearfix">
+                    <i></i>
+                    <em>已标星</em>
+                </div>
+                <div class="line-live"></div>                     
+                <div class="live-time  live-ho">
+                    <span class="live-t">第35周</span>
+                    <ul class="live-dif live-m">
+                        <li>第1周</li>
+                        <li>第2周</li>
+                        <li>第3周</li>
+                        <li>第4周</li>
+                        <li>第5周</li>
+                        <li>第6周</li>
+                    </ul>
+                </div>
+                <div class="line-live"></div>
+                <div class="live-now">
+                    <em>当前数量：</em>
+                    <em class="live-n">8</em>
+                </div>
+            </div>
+            <div class="live-table">
+                <table class="tables tables-f" style="table-layout:fixed;">
+                    <thead class="table-h">
+                        <tr>
+                            <th class="table-first">
+                                <div></div>
+                            </th>
+                            <th class="table-main table-fix" style="width:300px;">
+                                <div class="table-share">
+                                    <span class="share-l">分享</span>
+                                    <span class="share-d">删除</span>
+                                    <span class="share-m">移到...</span>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="table-first">
+                                <div class="clearfix">
+                                    <span></span>
+                                    <em>全选</em>
+                                </div>
+                            </th>
+                            <th class="table-main table-fix" style="width:300px;">
+                                <div style="width: 50%; text-align:center;">主播</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="tables-t">
+                        <tr>
+                            <td class="table-first">
+                                <div class="clearfix">
+                                    <span></span>
+                                    <em>1</em>
+                                </div>
+                            </td>
+                            <td class="table-con-pe clearfix table-fix">
+                                <div class="collect-t">
+                                    <span class="collect-table"></span>
+                                </div>
+                                <div class="table-img">
+                                    <img src="../images/first_1.png" alt="" />
+                                </div>
+                                <div class="table-name" style="margin-right:0;">
+                                    <span class="table-live-n">长城一号最美</span>
+                                    <span class="table-live-id">ID:154184511</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-first">
+                                <div class="clearfix">
+                                    <span></span>
+                                    <em>2</em>
+                                </div>
+                            </td>
+                            <td class="table-con-pe clearfix table-fix">
+                                <div class="collect-t">
+                                    <span class="collect-table"></span>
+                                </div>
+                                <div class="table-img">
+                                    <img src="../images/first_1.png" alt="" />
+                                </div>
+                                <div class="table-name" style="margin-right:0;">
+                                    <span class="table-live-n">长城一号最美</span>
+                                    <span class="table-live-id">ID:154184511</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-first">
+                                <div class="clearfix">
+                                    <span></span>
+                                    <em>3</em>
+                                </div>
+                            </td>
+                            <td class="table-con-pe clearfix table-fix">
+                                <div class="collect-t">
+                                    <span class="collect-table"></span>
+                                </div>
+                                <div class="table-img">
+                                    <img src="../images/first_1.png" alt="" />
+                                </div>
+                                <div class="table-name" style="margin-right:0;">
+                                    <span class="table-live-n">长城一号最美</span>
+                                    <span class="table-live-id">ID:154184511</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-first">
+                                <div class="clearfix">
+                                    <span></span>
+                                    <em>4</em>
+                                </div>
+                            </td>
+                            <td class="table-con-pe clearfix table-fix">
+                                <div class="collect-t">
+                                    <span class="collect-table"></span>
+                                </div>
+                                <div class="table-img">
+                                    <img src="../images/first_1.png" alt="" />
+                                </div>
+                                <div class="table-name" style="margin-right:0;">
+                                    <span class="table-live-n">长城一号最美</span>
+                                    <span class="table-live-id">ID:154184511</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-first">
+                                <div class="clearfix">
+                                    <span></span>
+                                    <em>5</em>
+                                </div>
+                            </td>
+                            <td class="table-con-pe clearfix table-fix">
+                                <div class="collect-t">
+                                    <span class="collect-table"></span>
+                                </div>
+                                <div class="table-img">
+                                    <img src="../images/first_1.png" alt="" />
+                                </div>
+                                <div class="table-name" style="margin-right:0;">
+                                    <span class="table-live-n">长城一号最美</span>
+                                    <span class="table-live-id">ID:154184511</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-first">
+                                <div class="clearfix">
+                                    <span></span>
+                                    <em>6</em>
+                                </div>
+                            </td>
+                            <td class="table-con-pe clearfix table-fix">
+                                <div class="collect-t">
+                                    <span class="collect-table"></span>
+                                </div>
+                                <div class="table-img">
+                                    <img src="../images/first_1.png" alt="" />
+                                </div>
+                                <div class="table-name" style="margin-right:0;">
+                                    <span class="table-live-n">长城一号最美</span>
+                                    <span class="table-live-id">ID:154184511</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="tables" style="table-layout:fixed; width:100%;">
+                    <thead class="table-h">
+                        <tr>
+                            <th class="table-first">
+                                <div></div>
+                            </th>
+                            <th class="table-main">
+                                <div class="table-share" style="visibility: hidden;">
+                                    <span class="share-l">分享</span>
+                                    <span class="share-d">删除</span>
+                                    <span class="share-m">移到...</span>
+                                </div>
+                            </th>
+                            <th class="table-none table-sn text-center">基本资料</th>
+                            <th class="table-none table-sn text-center table-w">历史累积</th>
+                            <th class="table-none table-sn text-center table-w">本月累积</th>
+                            <th class="table-show">
+                                <div></div>
+                            </th>
+                            <th class="text-center">
+                                <div>
+                                    <span>本周业绩</span>
+                                    <span>（第35周）</span>
+                                </div>
+                            </th>
+                            <th class="table-block text-center">8月25日（周一）</th>
+                            <th class="table-block text-center">8月25日（周二）</th>
+                            <th class="table-block text-center">8月25日（周三）</th>
+                            <th class="table-block text-center">8月25日（周四）</th>
+                            <th class="table-block text-center">8月25日（周五）</th>
+                            <th class="table-block text-center">8月25日（周六）</th>
+                            <th class="table-block text-center">8月25日（周日）</th>
+                        </tr>
+                        <tr>
+                            <th class="table-first">
+                                <div class="clearfix">
+                                    <span></span>
+                                    <em>全选</em>
+                                </div>
+                            </th>
+                            <th class="table-main">
+                                <div style="width: 50%; text-align:center;">主播</div>
+                                <div style="width: 22%;text-align:center;">详细</div>
+                                <div style="width: 19%;text-align:right;">分组</div>
+                            </th>
+                            <th class="table-none table-sn text-center">
+                                <div class="table-co">
+                                    <em>真名</em>
+                                </div>
+                                <div class="table-co">
+                                    <em>城市</em>
+                                </div>
+                                <div class="table-co">
+                                    <a href="javascript:;" title="">入驻时间</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                            </th>
+                            <th class="table-none table-sn text-center table-w">
+                                <div class="table-con">
+                                    <a href="javascript:;" title="">礼物</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-con">
+                                    <a href="javascript:;" title="">流水</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    <a href="javascript:;" title="">流水周增</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-con">
+                                    <a href="javascript:;" title="">粉丝</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    <a href="javascript:;" title="">粉丝周增</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-con">
+                                    <a href="javascript:;" title="">时长</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                            </th>
+                            <th class="table-none table-sn text-center table-w">
+                                <div class="table-con">
+                                    <a href="javascript:;" title="">礼物</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-con">
+                                    <a href="javascript:;" title="">流水</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    <a href="javascript:;" title="">流水周增</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-con">
+                                    <a href="javascript:;" title="">粉丝</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    <a href="javascript:;" title="">粉丝周增</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-con">
+                                    <a href="javascript:;" title="">时长</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                            </th>
+                            <th class="table-show">
+                                <span class="table-sh"></span>
+                            </th>
+                            <th class="text-center">     
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">礼物</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">流水</a>
+                                    <i class="table-dow"></i>
+                                </div> 
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">粉丝</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">时长</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                            </th>
+                            <th class="table-block text-center">
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">礼物</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">流水</a>
+                                    <i class="table-dow"></i>
+                                </div> 
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">粉丝</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">时长</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                            </th>
+                            <th class="table-block text-center">
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">礼物</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">流水</a>
+                                    <i class="table-dow"></i>
+                                </div> 
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">粉丝</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">时长</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                            </th>
+                            <th class="table-block text-center">
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">礼物</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">流水</a>
+                                    <i class="table-dow"></i>
+                                </div> 
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">粉丝</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">时长</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                            </th>
+                            <th class="table-block text-center">
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">礼物</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">流水</a>
+                                    <i class="table-dow"></i>
+                                </div> 
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">粉丝</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">时长</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                            </th>
+                            <th class="table-block text-center">
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">礼物</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">流水</a>
+                                    <i class="table-dow"></i>
+                                </div> 
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">粉丝</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">时长</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                            </th>
+                            <th class="table-block text-center">
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">礼物</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">流水</a>
+                                    <i class="table-dow"></i>
+                                </div> 
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">粉丝</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">时长</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                            </th>
+                            <th class="table-block text-center">
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">礼物</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">流水</a>
+                                    <i class="table-dow"></i>
+                                </div> 
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">粉丝</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                                <div class="table-cont">
+                                    <a href="javascript:;" title="">时长</a>
+                                    <i class="table-dow"></i>
+                                </div>
+                            </th>
+                        </tr> 
+                    </thead>
+                    <tbody class="tables-t">
+                        <tr>
+                            <td class="table-first">
+                                <div class="clearfix">
+                                    <span></span>
+                                    <em>1</em>
+                                </div>
+                            </td>
+                            <td class="table-con-pe clearfix">
+                                <div class="collect-t">
+                                    <span class="collect-table"></span>
+                                </div>
+                                <div class="table-img">
+                                    <img src="../images/first_1.png" alt="" />
+                                </div>
+                                <div class="table-name">
+                                    <span class="table-live-n">长城一号最美</span>
+                                    <span class="table-live-id">ID:154184511</span>
+                                </div>
+                                <div class="table-g">
+                                    <span class="table-gift">10545万礼物</span>
+                                    <span class="table-fans">151451粉丝</span>
+                                </div>
+                                <div class="table-music">      
+                                    <span>音乐</span>
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center">
+                                <div class="table-co">
+                                    我是一头牛呀
+                                </div>
+                                <div class="table-co">
+                                    大北京
+                                </div>
+                                <div class="table-co">
+                                    2017-08-25
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center table-w">
+                                <div class="table-con">
+                                    105486.1万
+                                </div>
+                                <div class="table-con">
+                                    5054.1万元
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    50%
+                                </div>
+                                <div class="table-con">
+                                    6666666
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    66%
+                                </div>
+                                <div class="table-con">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center table-w">
+                                <div class="table-con">
+                                    105486.1万
+                                </div>
+                                <div class="table-con">
+                                    5054.1万元
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    50%
+                                </div>
+                                <div class="table-con">
+                                    6666666
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    66%
+                                </div>
+                                <div class="table-con">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-show">
+                                <div></div>
+                            </td>
+                            <td class="text-center">     
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-first">
+                                <div class="clearfix">
+                                    <span></span>
+                                    <em>2</em>
+                                </div>
+                            </td>
+                            <td class="table-con-pe clearfix">
+                                <div class="collect-t">
+                                    <span class="collect-table"></span>
+                                </div>
+                                <div class="table-img">
+                                    <img src="../images/first_1.png" alt="" />
+                                </div>
+                                <div class="table-name">
+                                    <span class="table-live-n">长城一号最美</span>
+                                    <span class="table-live-id">ID:154184511</span>
+                                </div>
+                                <div class="table-g">
+                                    <span class="table-gift">10545万礼物</span>
+                                    <span class="table-fans">151451粉丝</span>
+                                </div>
+                                <div class="table-music">      
+                                    <span>音乐</span>
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center">
+                                <div class="table-co">
+                                    我是一头牛呀
+                                </div>
+                                <div class="table-co">
+                                    大北京
+                                </div>
+                                <div class="table-co">
+                                    2017-08-25
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center table-w">
+                                <div class="table-con">
+                                    105486.1万
+                                </div>
+                                <div class="table-con">
+                                    5054.1万元
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    50%
+                                </div>
+                                <div class="table-con">
+                                    6666666
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    66%
+                                </div>
+                                <div class="table-con">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center table-w">
+                                <div class="table-con">
+                                    105486.1万
+                                </div>
+                                <div class="table-con">
+                                    5054.1万元
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    50%
+                                </div>
+                                <div class="table-con">
+                                    6666666
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    66%
+                                </div>
+                                <div class="table-con">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-show">
+                                <div></div>
+                            </td>
+                            <td class="text-center">     
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-first">
+                                <div class="clearfix">
+                                    <span></span>
+                                    <em>3</em>
+                                </div>
+                            </td>
+                            <td class="table-con-pe clearfix">
+                                <div class="collect-t">
+                                    <span class="collect-table"></span>
+                                </div>
+                                <div class="table-img">
+                                    <img src="../images/first_1.png" alt="" />
+                                </div>
+                                <div class="table-name">
+                                    <span class="table-live-n">长城一号最美</span>
+                                    <span class="table-live-id">ID:154184511</span>
+                                </div>
+                                <div class="table-g">
+                                    <span class="table-gift">10545万礼物</span>
+                                    <span class="table-fans">151451粉丝</span>
+                                </div>
+                                <div class="table-music">      
+                                    <span>音乐</span>
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center">
+                                <div class="table-co">
+                                    我是一头牛呀
+                                </div>
+                                <div class="table-co">
+                                    大北京
+                                </div>
+                                <div class="table-co">
+                                    2017-08-25
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center table-w">
+                                <div class="table-con">
+                                    105486.1万
+                                </div>
+                                <div class="table-con">
+                                    5054.1万元
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    50%
+                                </div>
+                                <div class="table-con">
+                                    6666666
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    66%
+                                </div>
+                                <div class="table-con">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center table-w">
+                                <div class="table-con">
+                                    105486.1万
+                                </div>
+                                <div class="table-con">
+                                    5054.1万元
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    50%
+                                </div>
+                                <div class="table-con">
+                                    6666666
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    66%
+                                </div>
+                                <div class="table-con">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-show">
+                                <div></div>
+                            </td>
+                            <td class="text-center">     
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-first">
+                                <div class="clearfix">
+                                    <span></span>
+                                    <em>4</em>
+                                </div>
+                            </td>
+                            <td class="table-con-pe clearfix">
+                                <div class="collect-t">
+                                    <span class="collect-table"></span>
+                                </div>
+                                <div class="table-img">
+                                    <img src="../images/first_1.png" alt="" />
+                                </div>
+                                <div class="table-name">
+                                    <span class="table-live-n">长城一号最美</span>
+                                    <span class="table-live-id">ID:154184511</span>
+                                </div>
+                                <div class="table-g">
+                                    <span class="table-gift">10545万礼物</span>
+                                    <span class="table-fans">151451粉丝</span>
+                                </div>
+                                <div class="table-music">      
+                                    <span>音乐</span>
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center">
+                                <div class="table-co">
+                                    我是一头牛呀
+                                </div>
+                                <div class="table-co">
+                                    大北京
+                                </div>
+                                <div class="table-co">
+                                    2017-08-25
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center table-w">
+                                <div class="table-con">
+                                    105486.1万
+                                </div>
+                                <div class="table-con">
+                                    5054.1万元
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    50%
+                                </div>
+                                <div class="table-con">
+                                    6666666
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    66%
+                                </div>
+                                <div class="table-con">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center table-w">
+                                <div class="table-con">
+                                    105486.1万
+                                </div>
+                                <div class="table-con">
+                                    5054.1万元
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    50%
+                                </div>
+                                <div class="table-con">
+                                    6666666
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    66%
+                                </div>
+                                <div class="table-con">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-show">
+                                <div></div>
+                            </td>
+                            <td class="text-center">     
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-first">
+                                <div class="clearfix">
+                                    <span></span>
+                                    <em>5</em>
+                                </div>
+                            </td>
+                            <td class="table-con-pe clearfix">
+                                <div class="collect-t">
+                                    <span class="collect-table"></span>
+                                </div>
+                                <div class="table-img">
+                                    <img src="../images/first_1.png" alt="" />
+                                </div>
+                                <div class="table-name">
+                                    <span class="table-live-n">长城一号最美</span>
+                                    <span class="table-live-id">ID:154184511</span>
+                                </div>
+                                <div class="table-g">
+                                    <span class="table-gift">10545万礼物</span>
+                                    <span class="table-fans">151451粉丝</span>
+                                </div>
+                                <div class="table-music">      
+                                    <span>音乐</span>
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center">
+                                <div class="table-co">
+                                    我是一头牛呀
+                                </div>
+                                <div class="table-co">
+                                    大北京
+                                </div>
+                                <div class="table-co">
+                                    2017-08-25
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center table-w">
+                                <div class="table-con">
+                                    105486.1万
+                                </div>
+                                <div class="table-con">
+                                    5054.1万元
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    50%
+                                </div>
+                                <div class="table-con">
+                                    6666666
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    66%
+                                </div>
+                                <div class="table-con">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center table-w">
+                                <div class="table-con">
+                                    105486.1万
+                                </div>
+                                <div class="table-con">
+                                    5054.1万元
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    50%
+                                </div>
+                                <div class="table-con">
+                                    6666666
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    66%
+                                </div>
+                                <div class="table-con">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-show">
+                                <div></div>
+                            </td>
+                            <td class="text-center">     
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-first">
+                                <div class="clearfix">
+                                    <span></span>
+                                    <em>6</em>
+                                </div>
+                            </td>
+                            <td class="table-con-pe clearfix">
+                                <div class="collect-t">
+                                    <span class="collect-table"></span>
+                                </div>
+                                <div class="table-img">
+                                    <img src="../images/first_1.png" alt="" />
+                                </div>
+                                <div class="table-name">
+                                    <span class="table-live-n">长城一号最美</span>
+                                    <span class="table-live-id">ID:154184511</span>
+                                </div>
+                                <div class="table-g">
+                                    <span class="table-gift">10545万礼物</span>
+                                    <span class="table-fans">151451粉丝</span>
+                                </div>
+                                <div class="table-music">      
+                                    <span>音乐</span>
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center">
+                                <div class="table-co">
+                                    我是一头牛呀
+                                </div>
+                                <div class="table-co">
+                                    大北京
+                                </div>
+                                <div class="table-co">
+                                    2017-08-25
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center table-w">
+                                <div class="table-con">
+                                    105486.1万
+                                </div>
+                                <div class="table-con">
+                                    5054.1万元
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    50%
+                                </div>
+                                <div class="table-con">
+                                    6666666
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    66%
+                                </div>
+                                <div class="table-con">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-none table-sn text-center table-w">
+                                <div class="table-con">
+                                    105486.1万
+                                </div>
+                                <div class="table-con">
+                                    5054.1万元
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    50%
+                                </div>
+                                <div class="table-con">
+                                    6666666
+                                </div>
+                                <div class="table-con" style="width: 20%;">
+                                    66%
+                                </div>
+                                <div class="table-con">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-show">
+                                <div></div>
+                            </td>
+                            <td class="text-center">     
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                            <td class="table-block text-center">
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div> 
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                                <div class="table-cont">
+                                    ——
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="../js/style.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // 选择分类
+            $(".live-ho").hover(function() {
+                $(this).children("ul").css({
+                    "display": "block"
+                })
+                var liH = $(this).children("ul").height();
+                $(this).children("ul").css({
+                    "bottom": -liH
+                })
+            }, function() {
+                $(this).children("ul").css({
+                    "display": "none"
+                })
+            });
+            $(".live-dif li").click(function() {
+                var tex = $(this).html();
+                $(this).parent().css("display","none");
+                $(this).parent().siblings("span").html(tex);
+            })
+            $(".table-show span").click(function() {
+                var bool = $(this).hasClass('table-fold');
+                if(bool) {
+                    $(".table-sn").addClass('table-none');
+                    $(this).removeClass("table-fold");
+                } else {
+                    $(".text-center").removeClass('table-none');
+                    $(this).addClass("table-fold");
+                }
+            })
+            $(".living-l").click(function() {
+                var bool = $(this).children("i").hasClass('chioce-l');
+                if(bool) {
+                    $(this).children("i").removeClass('chioce-l');
+                } else {
+                    $(this).children("i").addClass('chioce-l');
+                }
+            })
+            // 全选和单选功能
+            var liveA = 0;
+            $(".tables-t .table-first div").click(function() {
+                var bool = $(this).children("span").hasClass('chioce-l');
+                var lenN = $(".table-h").attr("data-n");
+                var len = $(".tables-f tbody tr").length;
+                if(lenN == len || lenN == 0){
+                    console.log(lenN)
+                    liveA = lenN;
+                }
+                if(bool) {
+                    liveA--;
+                    $(this).children("span").removeClass('chioce-l');
+                } else {
+                    liveA++;
+                    $(this).children("span").addClass('chioce-l');
+                }
+                console.log(liveA)
+                if(liveA == len) {
+                    $(".table-h .table-first").find("span").addClass('chioce-l');
+                } else {
+                    $(".table-h .table-first").find("span").removeClass('chioce-l');
+                    $(".table-h").attr("data-n",999);
+                }
+            });
+            $(".table-h .table-first div").click(function() {
+                var bool = $(this).find("span").hasClass('chioce-l');
+                var len = $(".tables-f tbody tr").length; 
+                if(bool) {
+                    $(this).children("span").removeClass('chioce-l');
+                    $(".tables-t .table-first").find("span").removeClass('chioce-l');
+                    $(".table-h").attr("data-n",0);
+                } else {
+                    $(".tables-t .table-first").find("span").addClass('chioce-l');
+                    $(this).children("span").addClass('chioce-l');
+                    $(".table-h").attr("data-n",len);
+                }
+            })
+            // 标星功能
+            $(".collect-t span").click(function() {
+                var bl = $(this).hasClass('collected');
+                if(bl) {
+                    $(this).removeClass('collected');
+                } else {
+                    $(this).addClass('collected');
+                }
+            })
+        })
+    </script>
+</html>

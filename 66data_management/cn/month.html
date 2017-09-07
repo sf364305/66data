@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>结算设置</title>
+        <meta name="keywords" content="主播数据管理中心">
+        <meta name="description" content="主播数据管理中心">
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+        <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="index-header clearfix">
+            <a href="" title="" class="logo"><img src="../images/logo.png" alt="" /></a>
+            <div class="login">退出</div>
+            <div class="person-name">迷恋哥的传说</div>
+            <div class="guild-name">超强公会</div>
+        </header>
+        <div class="index-left">
+            <ul class="nav-left">
+                <li>
+                    <a href="javascript:;" class="nav-for nav-slide" title="业绩报表">业绩报表</a>
+                    <ul class="nav-inner">
+                        <li><a href="../index.html" title="概况">概况</a></li>
+                        <li><a href="live.html" title="按主播">按主播</a></li>
+                        <li><a href="grouping.html" title="按分组">按分组</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-tool nav-slide" title="工具箱">工具箱</a>
+                    <ul class="nav-inner">
+                        <li><a href="gift.html" title="刷礼物纪录">刷礼纪录</a></li>
+                        <li><a href="" class="nav-show" title="月度目标">月度目标</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-guild nav-slide" title="公会设置">公会设置</a>
+                    <ul class="nav-inner">
+                        <li><a href="bacsic.html" title="基本设置">基本设置</a></li>
+                        <li><a href="management.html" title="分组管理">分组管理</a></li>
+                        <li><a href="add_live.html" title="按主播">按主播</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-wage nav-slide" title="工资结算">工资结算</a>
+                    <ul class="nav-inner">
+                        <li><a href="proportion_set.html" title="设置比例">设置比例</a></li>
+                        <li><a href="wage_set.html" title="结算工资">结算工资</a></li>
+                        <li><a href="settlement.html" title="结算设置">结算设置</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="settle-wrap month-wrap">
+            <div class="live-head clearfix">
+                <div class="live-grouping live-ho">
+                    <span class="live-gr">所有分组</span>
+                    <ul class="live-dif">
+                        <li>一组</li>
+                        <li>二组</li>
+                        <li>三组</li>
+                        <li>四组</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="month-t">
+                <div class="month-head">月度计划</div>
+                <table class="month-table">
+                    <thead>
+                        <tr>
+                            <th>月份</th>
+                            <th>流水目标/元</th>
+                            <th>月活目标/人</th>
+                            <th>时长目标/时</th>
+                        </tr>
+                    </thead>
+                    <tbody class="month-tbody">
+                        <tr>
+                            <td>2017年01月</td>
+                            <td><input type="text" value="80000"/></td>
+                            <td><input type="text" value="20"/></td>
+                            <td><input type="text" value="2000"/></td>
+                        </tr>
+                        <tr>
+                            <td>2017年01月</td>
+                            <td><input type="text" value="80000"/></td>
+                            <td><input type="text" value="20"/></td>
+                            <td><input type="text" value="2000"/></td>
+                        </tr>
+                        <tr>
+                            <td>2017年01月</td>
+                            <td><input type="text" value="80000"/></td>
+                            <td><input type="text" value="20"/></td>
+                            <td><input type="text" value="2000"/></td>
+                        </tr>
+                        <tr>
+                            <td>2017年01月</td>
+                            <td><input type="text" value="80000"/></td>
+                            <td><input type="text" value="20"/></td>
+                            <td><input type="text" value="2000"/></td>
+                        </tr>
+                        <tr>
+                            <td>2017年01月</td>
+                            <td><input type="text" value="80000"/></td>
+                            <td><input type="text" value="20"/></td>
+                            <td><input type="text" value="2000"/></td>
+                        </tr>
+                        <tr>
+                            <td>2017年01月</td>
+                            <td><input type="text" value="80000"/></td>
+                            <td><input type="text" value="20"/></td>
+                            <td><input type="text" value="2000"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="../js/style.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".live-ho").hover(function() {
+                $(this).children("ul").css({
+                    "display": "block"
+                })
+                var liH = $(this).children("ul").height();
+                $(this).children("ul").css({
+                    "bottom": -liH
+                })
+            }, function() {
+                $(this).children("ul").css({
+                    "display": "none"
+                })
+            });
+            $(".live-dif li").click(function() {
+                var tex = $(this).html();
+                $(this).parent().css("display","none");
+                $(this).parent().siblings("span").html(tex);
+            })
+            $(".month-tbody input").hover(function() {
+                $(this).css({
+                    "border": "1px solid #1cb1cf"
+                })
+            }, function() {
+                $(this).css({
+                    "border": "none"
+                })
+            });
+        })
+    </script>
+</html>

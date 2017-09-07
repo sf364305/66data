@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>添加主播</title>
+        <meta name="keywords" content="主播数据管理中心">
+        <meta name="description" content="主播数据管理中心">
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+        <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="index-header clearfix">
+            <a href="" title="" class="logo"><img src="../images/logo.png" alt="" /></a>
+            <div class="login">退出</div>
+            <div class="person-name">迷恋哥的传说</div>
+            <div class="guild-name">超强公会</div>
+        </header>
+        <div class="index-left">
+            <ul class="nav-left">
+                <li>
+                    <a href="javascript:;" class="nav-for nav-slide" title="业绩报表">业绩报表</a>
+                    <ul class="nav-inner">
+                        <li><a href="../index.html" title="概况">概况</a></li>
+                        <li><a href="live.html" title="按主播">按主播</a></li>
+                        <li><a href="" title="按分组">按分组</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-tool nav-slide" title="工具箱">工具箱</a>
+                    <ul class="nav-inner">
+                        <li><a href="" title="刷礼物纪录">刷礼纪录</a></li>
+                        <li><a href="" title="月度目标">月度目标</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-guild nav-slide" title="公会设置">公会设置</a>
+                    <ul class="nav-inner">
+                        <li><a href="bacsic.html" title="基本设置">基本设置</a></li>
+                        <li><a href="management.html" title="分组管理">分组管理</a></li>
+                        <li><a href="" class="nav-show" title="添加主播">添加主播</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-wage nav-slide" title="工资结算">工资结算</a>
+                    <ul class="nav-inner">
+                        <li><a href="proportion_set.html" title="设置比例">设置比例</a></li>
+                        <li><a href="wage_set.html" title="结算工资">结算工资</a></li>
+                        <li><a href="" title="结算设置">结算设置</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="manage-wrap">
+            <div class="live-head clearfix">
+                <div class="live-grouping live-ho">
+                    <span class="live-gr" style="background: none;">添加主播</span>
+                </div>
+            </div>
+            <div class="manage-con-add">
+                <form action="" method="" name="">                 
+                    <div class="manage-t">
+                        <table class="manage-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 250px;">平台</th>
+                                    <th style="width: 250px;">ID</th>
+                                    <th style="width: 300px;">添加到分组（还没成员？）<a href="management.html" class="cl-take">点击创建</a></th>
+                                    <th style="width: 100px;"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="manage-tbody" id="addDiv">
+                                <tr>
+                                    <td class="add-name-l">
+                                        <input type="text" class="add-live-plat"/>
+                                    </td>
+                                    <td><input type="text" class="add-id-l"/></td>
+                                    <td>
+                                        <input type="text" class="add-live-manage"/>
+                                    </td>
+                                    <td>
+                                        <span class="live-com-l">取消</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="add-manage-l">
+                        <div class="add-manage-group">+新增一栏</div>
+                    </div>
+                    <div class="add-live-end"><button type="submit">完成</button></div>       
+                </form>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="../js/style.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // 新增一栏
+            $(".add-manage-group").click(function() {
+                $(".manage-tbody").append('<tr>'+'<td class="add-name-l">'+'<input type="text" class="add-live-plat"/>'+'</td>'+'<td>'+'<input type="text" class="add-id-l"/>'+'</td>'+'<td>'+'<input type="text" class="add-live-manage"/>'+'</td>'+'<td>'+'<span class="live-com-l">'+'取消'+'</span>'+'</td>'+'</tr>');
+            })
+            // 取消
+            document.getElementById("addDiv").addEventListener("click",function(e) {
+                // e.target是被点击的元素
+                if(e.target && e.target.nodeName == "SPAN") {
+                    // 获得CSS类名
+                    var classes = e.target.className;
+                    // 搜索匹配!
+                    if(classes == "live-com-l") {
+                        $(e.target).parent().parent().remove();
+                    }
+                }
+            });
+            // 完成
+        })
+    </script>
+</html>

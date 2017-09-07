@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>工资结算</title>
+        <meta name="keywords" content="主播数据管理中心">
+        <meta name="description" content="主播数据管理中心">
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+        <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="index-header clearfix">
+            <a href="" title="" class="logo"><img src="../images/logo.png" alt="" /></a>
+            <div class="login">退出</div>
+            <div class="person-name">迷恋哥的传说</div>
+            <div class="guild-name">超强公会</div>
+        </header>
+        <div class="index-left">
+            <ul class="nav-left">
+                <li>
+                    <a href="javascript:;" class="nav-for nav-slide" title="业绩报表">业绩报表</a>
+                    <ul class="nav-inner">
+                        <li><a href="../index.html" title="概况">概况</a></li>
+                        <li><a href="live.html" title="按主播">按主播</a></li>
+                        <li><a href="grouping.html" title="按分组">按分组</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-tool nav-slide" title="工具箱">工具箱</a>
+                    <ul class="nav-inner">
+                        <li><a href="gift.html" title="刷礼物纪录">刷礼纪录</a></li>
+                        <li><a href="month.html" title="月度目标">月度目标</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-guild nav-slide" title="公会设置">公会设置</a>
+                    <ul class="nav-inner">
+                        <li><a href="bacsic.html" title="基本设置">基本设置</a></li>
+                        <li><a href="management.html" title="分组管理">分组管理</a></li>
+                        <li><a href="add_live.html" title="按主播">按主播</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-wage nav-slide" title="工资结算">工资结算</a>
+                    <ul class="nav-inner">
+                        <li><a href="proportion_set.html" title="设置比例">设置比例</a></li>
+                        <li><a href=""  class="nav-show" title="结算工资">结算工资</a></li>
+                        <li><a href="settlement.html" title="结算设置">结算设置</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="manage-wrap">
+            <div class="live-head clearfix">
+                <div class="live-grouping live-ho">
+                    <span class="live-gr" style="background: none;">+添加主播</span>
+                </div>
+            </div>
+            <div class="wage-t">
+                <table class="wage-table">
+                    <thead>
+                        <tr>
+                            <th style="width:100px">时间</th>
+                            <th style="width:200px">主播</th>
+                            <th>签约类型</th>
+                            <th>礼物数</th>
+                            <th>内部礼物数</th>
+                            <th>等值人民币</th>
+                            <th>平台比例</th>
+                            <th>主播成分</th>
+                            <th>底薪</th>
+                            <th>收入</th>
+                            <th>结算时间</th>
+                            <th>结算金额</th>
+                            <th>结算状态</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <em>2017-08-01</em>
+                                <i>~</i>
+                                <span>2017-08-20</span>
+                            </td>
+                            <td class="wage-person">
+                                <dl class="clearfix">
+                                    <dt>
+                                        <img src="../images/first_1.png" height="48" width="48" alt="" class="wage-img-per"/>
+                                        <img src="../images/yizhibo.png" alt="" class="wage-plat"/>
+                                    </dt>
+                                    <dd>
+                                        <p class="wage-p">酸酸甜甜我</p>
+                                        <p>ID：65498116</p>
+                                    </dd>
+                                </dl>
+                            </td>
+                            <td>A级</td>
+                            <td>50万</td>
+                            <td>10万</td>
+                            <td>4万</td>
+                            <td>0.6</td>
+                            <td>0.6</td>
+                            <td>3000</td>
+                            <td>17400</td>
+                            <td>2017-8-22</td>
+                            <td>17400</td>
+                            <td>未结算</td>
+                            <td>
+                                <button type="button" class="btn btn-primary wage-settlement" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">结算</button>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <em>2017-08-01</em>
+                                <i>~</i>
+                                <span>2017-08-20</span>
+                            </td>
+                            <td class="wage-person">
+                                <dl class="clearfix">
+                                    <dt>
+                                        <img src="../images/first_1.png" height="48" width="48" alt="" class="wage-img-per"/>
+                                        <img src="../images/yizhibo.png" alt="" class="wage-plat"/>
+                                    </dt>
+                                    <dd>
+                                        <p class="wage-p">酸酸甜甜我</p>
+                                        <p>ID：65498116</p>
+                                    </dd>
+                                </dl>
+                            </td>
+                            <td>A级</td>
+                            <td>50万</td>
+                            <td>10万</td>
+                            <td>4万</td>
+                            <td>0.6</td>
+                            <td>0.6</td>
+                            <td>3000</td>
+                            <td>17400</td>
+                            <td>2017-8-22</td>
+                            <td>17400</td>
+                            <td>未结算</td>
+                            <td>
+                                <button type="button" class="btn btn-primary wage-settlement" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">结算</button>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <em>2017-08-01</em>
+                                <i>~</i>
+                                <span>2017-08-20</span>
+                            </td>
+                            <td class="wage-person">
+                                <dl class="clearfix">
+                                    <dt>
+                                        <img src="../images/first_1.png" height="48" width="48" alt="" class="wage-img-per"/>
+                                        <img src="../images/yizhibo.png" alt="" class="wage-plat"/>
+                                    </dt>
+                                    <dd>
+                                        <p class="wage-p">酸酸甜甜我</p>
+                                        <p>ID：65498116</p>
+                                    </dd>
+                                </dl>
+                            </td>
+                            <td>A级</td>
+                            <td>50万</td>
+                            <td>10万</td>
+                            <td>4万</td>
+                            <td>0.6</td>
+                            <td>0.6</td>
+                            <td>3000</td>
+                            <td>17400</td>
+                            <td>2017-8-22</td>
+                            <td>17400</td>
+                            <td>未结算</td>
+                            <td>
+                                <button type="button" class="btn btn-primary wage-settlement" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">结算</button>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <em>2017-08-01</em>
+                                <i>~</i>
+                                <span>2017-08-20</span>
+                            </td>
+                            <td class="wage-person">
+                                <dl class="clearfix">
+                                    <dt>
+                                        <img src="../images/first_1.png" height="48" width="48" alt="" class="wage-img-per"/>
+                                        <img src="../images/yizhibo.png" alt="" class="wage-plat"/>
+                                    </dt>
+                                    <dd>
+                                        <p class="wage-p">酸酸甜甜我</p>
+                                        <p>ID：65498116</p>
+                                    </dd>
+                                </dl>
+                            </td>
+                            <td>A级</td>
+                            <td>50万</td>
+                            <td>10万</td>
+                            <td>4万</td>
+                            <td>0.6</td>
+                            <td>0.6</td>
+                            <td>3000</td>
+                            <td>17400</td>
+                            <td>2017-8-22</td>
+                            <td>17400</td>
+                            <td>未结算</td>
+                            <td>
+                                <button type="button" class="btn btn-primary wage-settlement" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">结算</button>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">提示</h4>
+              </div>
+              <div class="modal-body wage-mon">
+                确定结算金额为<em>17400</em>元吗？
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">确定</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="../js/style.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+        })
+    </script>
+</html>

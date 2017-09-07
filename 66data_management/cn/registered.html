@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>公会设置</title>
+        <meta name="keywords" content="主播数据管理中心">
+        <meta name="description" content="主播数据管理中心">
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+        <!-- <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script> -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="guild-set">
+            <div class="guild-register-c">
+                <form action="" method="" name="">   
+                    <div class="guild-set-h"><img src="../images/register.png" alt=""/></div>
+                    <div class="guild-register">
+                        <input type="text" placeholder="输入手机号"/>
+                    </div>
+                    <div class="guild-register-s clearfix">
+                        <input type="text" placeholder="验证码" class="register-tel"/>
+                        <div class="register-i">
+                            <span class="register-num">验证码</span>
+                            <i></i>
+                        </div>
+                    </div>
+                    <div class="guild-register-pass">
+                        <input type="text" placeholder="设置密码"/>
+                    </div>
+                    <div class="guild-sub">
+                        <button type="submit" class="register-sub">注册</button>
+                    </div>
+                    <div class="register-else clearfix">
+                        <a href="login.html">去登录</a>
+                        <div>
+                            <a href="">阅读并同意《用户协议》</a>
+                            <i></i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var windowS = $(window).height();
+            $(".guild-set").css({
+                "height": windowS
+            })
+            $(".register-sub").click(function() {
+                var tel = $(".login-name input").val();
+                if (!(/^1[34578]\d{9}$/.test(tel))) {
+                    alert("手机号码有误，请重填");
+                    return false;
+                }
+            })
+            var telT = 60;
+            var timer = null;
+            function showTime() {
+                $(".register-num").text(telT+"s");
+                telT--;
+                if(telT < 0) {
+                    clearInterval(timer)
+                    $(".register-num").text("重新发送");
+                    $(".register-i i").css("display","none");
+                    telT = 60;
+                    $(".register-i").attr("date",telT);
+                }
+            }
+            $(".register-num").click(function() {
+                var dat = $(".register-i").attr("date");
+                $(".register-num").text("发送中...");
+                $(this).siblings("i").css("display","block");
+                $(".register-num").css({
+                    "background": "#a0a0a0",
+                    "color": "#666"
+                })
+                timer = setInterval(showTime,1000);
+            })
+        })
+    </script>
+</html>
