@@ -129,10 +129,21 @@
                 </form>
             </div>
         </div>
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+            <div class="load_title">正在加载LoveFeel站点<br><span>V1.0</span></div>
+        </div>
     </body>
     <script type="text/javascript" src="../js/style.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
+            // 等待所有加载
+                $(window).load(function(){
+                    $('body').addClass('loaded');
+                    $('#loader-wrapper .load_title').remove();
+                });
             // 设置
             $(".settle-set").click(function() {
                 $(".settlement-t").css("display","none");
@@ -162,7 +173,7 @@
                         $(e.target).parent().parent().remove();
                     }
                 }
-            });
+            });    
         })
     </script>
 </html>

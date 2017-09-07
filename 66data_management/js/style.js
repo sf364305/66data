@@ -2,7 +2,7 @@
 * @Author: anchen
 * @Date:   2017-05-02 11:42:50
 * @Last Modified by:   anchen
-* @Last Modified time: 2017-09-07 12:04:04
+* @Last Modified time: 2017-09-07 18:24:29
 */
 
 $(document).ready(function(){
@@ -55,5 +55,41 @@ $(document).ready(function(){
                 "display": "block"
             })
         }
-    })
+    });
+    // 加载动画
+    $(".index-data-left").click(function(){
+        $(".mloading").css("display","block")
+        $("body").mLoading();
+        setTimeout(function(){
+            $(".mloading").css("display","none")
+        },1000)
+    });
+    // 提示框调用
+       $("#alertBtn").click(function(){
+            $("body").css({
+                "overflow-y": "hidden"
+            })
+           $.DialogByZ.Alert({Title: "提示", Content: "您的请求失败",BtnL:"确定",FunL:alerts}) 
+       })
+       $("#confirmBtn").click(function(){
+           $.DialogByZ.Confirm({Title: "", Content: "投资前需开通第三方存管账户</br>确保资金安全",FunL:confirmL,FunR:Immediate})
+       })
+       $("#toastBtn").click(function(){
+          $.DialogByZ.Autofade({Content: "感谢您对我们的支持"})
+       })
+       $("#load").click(function(){
+          $.DialogByZ.Loading('image/loading.png') 
+       })
+    ///
+       function confirmL(){
+                $.DialogByZ.Close();
+                $.DialogByZ.Alert({Title: "提示", Content: "您要求稍后开通",BtnL:"确定"})
+       }
+       //
+       function alerts(){
+            $("body").css({
+                "overflow-y": "auto"
+            })
+            $.DialogByZ.Close();
+       }
 });
