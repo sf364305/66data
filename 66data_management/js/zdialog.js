@@ -19,6 +19,9 @@
 		        Autofade: function (params) { Show(params,"Autofade") },
 		        //关闭弹出框
 		        Close: function () {
+		        	$("body").css({
+		                "overflow-y": "auto"
+		        	});
 		            $(".zbox-popup,.zbox-popup-backdrop").remove();
 		        },
 		        //加载图形
@@ -45,6 +48,9 @@
 		    	$("body").append(dislogContainer);
 		    }
 		    function Show(params, caller){
+			    	$("body").css({
+			    	    "overflow-y": "hidden"
+			    	})
 		    	  Init(params);
 		    	  var dislogContainer;
 		    	  var dialogInner;
