@@ -2079,3 +2079,45 @@
     0% { transform: rotate(0deg)  ;}
     100% { transform: rotate(360deg) ;}
 }
+/*弹出确认框*/
+#popup_container {
+    font-size:14px;
+    min-width:300px;
+    max-width:600px;
+    background:#FFF;
+    color:#000;
+    -moz-border-radius:5px;
+    webkit-border-radius:5px;
+    border-radius:5px;
+}
+#popup_ok {
+    width: 60px;
+    height: 28px;
+    border: 1px solid #1cbfdf;
+    padding: 0;
+    line-height: 28px;
+    outline: none;
+}
+#popup_title {
+    font-size:14px;
+    font-weight:bold;
+    text-align:center;
+    color:#666;
+    border-bottom:solid 1px #999;
+    cursor:default;
+    padding: 10px 0;
+}
+#popup_content {
+    padding:1em 1.75em;
+    margin:0em;
+}
+#popup_message{
+    text-align: center;
+}
+#popup_panel{
+    text-align:center;
+    margin:1em 0em 0em 0em;
+}
+#popup_prompt{
+    margin:.5em 0em;
+}
